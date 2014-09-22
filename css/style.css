@@ -582,37 +582,31 @@ b {
 #section2-b .ico1 {
 	background-position: 0 -274px;
 	height: 60px;
-	margin: 2px 6% 0 9px;
 	width: 60px;
 }
 #section2-b .ico2 {
 	background-position: -70px -274px;
 	height: 60px;
-	margin: 2px 3% 0 1px;
 	width: 46px;
 }
 #section2-b .ico3 {
 	background-position: -126px -274px;
 	height: 60px;
-	margin: 1px 6% 0 0;
 	width: 63px;
 }
 #section2-b .ico4 {
 	background-position: 0 -339px;
 	height: 58px;
-	margin: 5px 6% 0 10px;
 	width: 60px;
 }
 #section2-b .ico5 {
 	background-position: -70px -339px;
 	height: 64px;
-	margin: -3px 6% 0 1px;
 	width: 43px;
 }
 #section2-b .ico6 {
 	background-position: -126px -339px;
 	height: 53px;
-	margin: 2px 7% 0 -9px;
 	width: 75px;
 }
 #section3 {
@@ -812,7 +806,6 @@ b {
 	background-position: 0 -133px;
 	display: inline-block;
 	height: 57px;
-	margin: 4px 7% 0 9px;
 
 	vertical-align: top;
 	width: 41px;
@@ -821,8 +814,6 @@ b {
 	background-position: -51px -133px;
 	display: inline-block;
 	height: 51px;
-	margin: 6px 3% 0 0;
-
 	vertical-align: top;
 	width: 77px;
 }
@@ -830,8 +821,6 @@ b {
 	background-position: -138px -133px;
 	display: inline-block;
 	height: 55px;
-	margin: -2px 6% 0 0;
-
 	vertical-align: top;
 	width: 69px;
 }
@@ -839,8 +828,6 @@ b {
 	background-position: 0 -197px;
 	display: inline-block;
 	height: 54px;
-	margin: 2px 5% 0 0;
-
 	vertical-align: top;
 	width: 54px;
 }
@@ -848,7 +835,6 @@ b {
 	background-position: -64px -197px;
 	display: inline-block;
 	height: 64px;
-	margin: -7px 6% 0 28px;
 	vertical-align: top;
 	width: 41px;
 }
@@ -856,9 +842,13 @@ b {
 	background-position: -115px -197px;
 	display: inline-block;
 	height: 64px;
-	margin: -4px 10% 0 12px;
 	vertical-align: top;
 	width: 45px;
+}
+.wrap-ico {
+	display: inline-block;
+	width: 100px;
+	text-align: center;
 }
 #section4-a {
 }
@@ -2267,12 +2257,6 @@ b {
 	.why_we ul li  p {
 		width: 64%;
 	}
-	.why_we ul li .ico1 {
-		margin: 4px 13% 0 9px;
-	}
-	.why_we ul li .ico4 {
-		margin: 2px 12% 0 0
-	}
 	.banner_box p {
 		margin: 69px 0 0 0;
 		padding: 0 10px;
@@ -2291,6 +2275,9 @@ b {
 	}
 	.button_main_adv_clone, .button_main_master_clone {
 		margin: -115px auto;
+	}
+	.why_we>ul>li>ul>li {
+		padding: 0;
 	}
 }
 @media all and (max-width: 400px) {

@@ -234,7 +234,7 @@ b {
 	height: 100%;
 	position: absolute;
 	right: 0px;
-	width: 80px;
+	width: 60px;
 	display: none;
 }
 .menu_mobile {
@@ -781,7 +781,7 @@ b {
 }
 .why_we>ul>li>ul>li {
 	margin: 0 0 9px;
-	min-height: 130px;
+	min-height: 230px;
 	padding: 0 20px;
 }
 .why_we ul li p {
@@ -2278,6 +2278,7 @@ b {
 	}
 	.why_we>ul>li>ul>li {
 		padding: 0;
+		min-height: 120px;
 	}
 }
 @media all and (max-width: 400px) {

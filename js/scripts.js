@@ -234,22 +234,22 @@ $(document).ready(function(){
 
 
         $masterButton.on('click',function(){
-        $enterButton.removeClass('active_enter_button');
-        $bannerLeft.addClass('banner_active');
-        $bannerLeft.removeClass('banner_l_inactive');
-        $bannerRight.removeClass('banner_active');
-        $bannerRight.addClass('banner_r_inactive');
-        $signButton.removeClass('active_sign_button');
-        $sec1a.css('display','block');
-        $sec1b.css('display','none');
-        $sec2a.css('display','block');
-        $sec2b.css('display','none');
-        $sec3a.css('display','block');
-        $sec3b.css('display','none');
-        $sec4a.css('display','block');
-        $sec4b.css('display','none');
-        $section5.css('background','url(./img/sec5_bg.jpg) no-repeat center bottom fixed');
-        $regButton.removeClass('active_button');
+            $enterButton.removeClass('active_enter_button');
+            $bannerLeft.addClass('banner_active');
+            $bannerLeft.removeClass('banner_l_inactive');
+            $bannerRight.removeClass('banner_active');
+            $bannerRight.addClass('banner_r_inactive');
+            $signButton.removeClass('active_sign_button');
+            $sec1a.css('display','block');
+            $sec1b.css('display','none');
+            $sec2a.css('display','block');
+            $sec2b.css('display','none');
+            $sec3a.css('display','block');
+            $sec3b.css('display','none');
+            $sec4a.css('display','block');
+            $sec4b.css('display','none');
+            $section5.css('background','url(./img/sec5_bg.jpg) no-repeat center bottom fixed');
+            $regButton.removeClass('active_button');
     });
 
     $adButton.on('click',function(){

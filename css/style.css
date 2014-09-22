@@ -676,9 +676,9 @@ b {
 	min-height: 537px;
 }
 .tabs {
-	margin: 54px 0 0 3px;
+	margin: 54px 0 0 0px;
 	max-width: 1252px;
-	width: 99%;
+	width: 100%;
 	display: table;
 }
 .tabs li {

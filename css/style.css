@@ -86,6 +86,20 @@ body {
 	font-size: 16px;
 	height: 100%;
 }
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #939393;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #939393;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #939393;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #939393;
+}
 .boxsizing {
 	-moz-box-sizing:    border-box;
 	-webkit-box-sizing: border-box;
@@ -1155,7 +1169,7 @@ b {
 	font-size: 18px;
 	height: 192px;
 	line-height: 27px;
-	margin: 0 22px 0 3px;
+	margin: 0 22px 0 0px;
 	outline: none;
 	padding: 15px 20px;
 	resize: none;
@@ -2399,6 +2413,27 @@ b {
 		-moz-box-sizing:    border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing:        border-box;
+	}
+	.contacts_wrap .feedback_form {
+		max-width: 535px;
+	}
+	.contacts_wrap .feedback_form textarea {
+		-moz-box-sizing:    border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing:        border-box;
+		width: 95%;
+		float: none;
+	}
+	.contacts_wrap .feedback_form input[type="text"] {
+		width: 95%;
+		margin: 20px 0;
+		-moz-box-sizing:    border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing:        border-box;
+	}
+	.contacts_wrap .feedback_form .send_button {
+		width: 95%;
+		padding: 10px 0;
 	}
 }
 @media all and (max-width: 700px) {

@@ -107,7 +107,7 @@ body {
 }
 .static {
 	margin: 0 auto;
-	width: 960px;
+	max-width: 960px;
 }
 .cf:after,.cf:before {
 	content: '';
@@ -1219,19 +1219,19 @@ b {
 	background: #f8f8f8;
 }
 .about1 {
-	padding: 76px 0 56px;
+	padding: 26px 20px 56px 20px;
 }
 .about2 {
 	border-bottom: 4px solid #f2f2f2;
 	border-top: 4px solid #f2f2f2;
-	padding: 70px 0 62px;
+	padding: 26px 20px 56px 20px;
 }
 .about3 {
 	border-bottom: 4px solid #f2f2f2;
-	padding: 66px 0 23px;
+	padding: 26px 20px 56px 20px;
 }
 .about4 {
-	padding: 48px 0 32px;
+	padding: 26px 20px 56px 20px;
 }
 .about h4 {
 	float: left;
@@ -1242,7 +1242,7 @@ b {
 	float: left;
 	line-height: 26px;
 	margin: 30px 0;
-	width: 640px;
+	max-width: 640px;
 }
 .ico1,.ico2,.ico3 {
 	display: block;
@@ -2406,5 +2406,9 @@ b {
 @media all and (max-width: 400px) {
 	.good__chart_b3, .good__layout {
 		display: none;
+	}
+	.about1 .ico1, .about2 .ico2, .about3 .ico3 {
+		margin: 0 auto 20px;
+		float: none;
 	}
 }

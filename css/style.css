@@ -1202,6 +1202,7 @@ b {
 }
 .rules {
 	margin: 36px auto 63px;
+	padding: 0 10px;
 }
 .rules p {
 	color: #3c3c3b;

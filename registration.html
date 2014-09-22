@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>EverAD - рекламная сеть</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="./css/style.css" rel="stylesheet">
+	<link href="./css/animation.css" rel="stylesheet">
+	<link href="./css/jquery.bxslider.css" rel="stylesheet">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="http://cdn.jquerytools.org/1.2.7/all/jquery.tools.min.js"></script>
+	<script type="text/javascript" src="./js/lodash.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="./js/jquery.checkbox.js"></script>
+	<script type="text/javascript" src="./js/masonry.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.accordion.2.0.min.js"></script>
+	<script type="text/javascript" src="./js/scripts.js"></script>
+</head>
+
+<body>
+	<div class="popup_overlay"></div>
+<!-- Попап-окно формы заявки -->
+	<div id="form_popup">
+		<div class="form_popup_top">Войти в аккаунт
+			<a href="#" class="close_btn">&times;</a>
+		</div>
+		<form name="order_form" class="order_form">
+			<input type="text" placeholder="Email" name="email">
+			<input type="password" placeholder="Пароль" name="password">
+			<input type="checkbox" id="checkbox" class="styled"><label for="checkbox">Запомнить меня</label>
+			<a href="#">Забыли пароль?</a><br>
+			<input type="submit" class="enter_btn" value="Войти">
+			<input type="button" class="cancel_button" value="Отмена">
+		</form>
+		<div class="not_account">
+			<p>Нет аккаунта?</p>
+			<a href="./registration.html" class="reg_btn">Зарегистрироваться</a>
+		</div>
+	</div><!-- конец попап-окна формы заявки -->
+<div class="wrapper">
+
+	<header class="header">
+			<div class="h_l logo-block">
+				<a href="index.html" class="logo-wrap">
+					<img src="img/logo.png" alt="logo">
+				</a>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="#">Вебмастеру</a></li>
+					<li><a href="#">Рекламодателю</a></li>
+					<li><a href="./about.html">О системе</a></li>
+					<li><a href="./contacts.html">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="h_r button_enter clearfix">
+				<a href="javascript:void(0);" class="enter_button">Вход и регистрация</a>
+			</div>
+			<div class="h_r button_mobile">
+				<a href="javascript:void(0);"></a>
+			</div>
+			<div class="menu_mobile boxsizing"></div>
+		</header><!-- .header-->
+
+	<main class="content">
+		<div class="static registration">
+			<ul class="tabs2">
+                <li><a href="#" class="current"><span class="ico ico1"></span>Вебмастер</a></li>
+                <li><a href="#"><span class="ico ico2"></span>Рекламодатель</a></li>
+            </ul>
+            <div class="panes2">
+                <div class="cols">
+                    <h4>Регистрация вебмастера</h4>
+					<div class="line"></div>
+					<div class="reg_box">
+						<div class="reg_box_labels">
+							<p>Имя или никнейм:</p>
+							<p>Электронная почта:</p>
+							<p>Пароль:</p>
+							<p>Пароль еще раз:</p>
+						</div>
+						<form name="master_registration_form" class="registration_form">
+							<input type="text" value="Введите имя" onclick="if(this.value=='Введите имя'){this.value=''}" onblur="if(this.value==''){this.value='Введите имя'}" id="name" name="name">
+							<input type="text" value="Введите почту" onclick="if(this.value=='Введите почту'){this.value=''}" onblur="if(this.value==''){this.value='Введите почту'}" id="email" name="email">
+							<input type="text" value="Введите пароль" onclick="if(this.value=='Введите пароль'){this.value=''}" onblur="if(this.value==''){this.value='Введите пароль'}" id="password" name="password">
+							<input type="text" value="Введите пароль еще раз" onclick="if(this.value=='Введите пароль еще раз'){this.value=''}" onblur="if(this.value==''){this.value='Введите пароль еще раз'}" id="repeat_password" name="repeat_password">
+							<div class="chk">
+								<input type="checkbox" id="check1" class="styled"><a href="./rules.html">Согласен с правилами сети EverAD</a>
+							</div>
+							<input type="submit" class="send_button" value="Зарегистрироваться">
+							<input type="button" class="cancel_button" value="Отмена">
+						</form>
+					</div>
+					
+                </div>
+                <div class="cols">
+                    <h4>Регистрация рекламодателя</h4>
+					<div class="line"></div>
+					<div class="reg_box">
+						<div class="reg_box_labels">
+							<p>Фамилия, Имя, Отчество:</p>
+							<p>Электронная почта:</p>
+							<p>Телефон для связи:</p>
+							<p>Skype:</p>
+							<p>Название компании:</p>
+							<p>Рекламируемый продукт (услуга):</p>
+							<p>Адрес сайта (лэндинга):</p>
+							<p>Целевое действие:</p>
+							<p>Желаемый размер вознаграждения (р):</p>
+							<p>Предпочитаемая аудитория</p>
+							<p>Желаемый объём действий в месяц</p>
+							<p>В каких СРА-сетях уже идёт размещения?</p>
+							<p>Требуемая география</p>
+							<p>Post-click (количество дней)</p>
+							<p class="geogr_lbl">Где сейчас проходит размещение рекламы для проекта (если проводится):</p>
+							<p class="qual_lbl">Какие источники дали наибольшую отдачу по качеству (если есть)?</p>
+							<p class="traf_lbl">Какие источники дали наибольшую отдачу по объему трафика (если есть)?</p>
+						</div>
+						<form name="advertiser_order_form" class="registration_form">
+							<input type="text" value="Иванов Иван Иванович" onclick="if(this.value=='Иванов Иван Иванович'){this.value=''}" onblur="if(this.value==''){this.value='Иванов Иван Иванович'}" id="name2" name="name">
+							<input type="text" value="email@mail.ru" onclick="if(this.value=='email@mail.ru'){this.value=''}" onblur="if(this.value==''){this.value='email@mail.ru'}" id="email2" name="email">
+							<input type="text" value="380950948376" onclick="if(this.value=='380950948376'){this.value=''}" onblur="if(this.value==''){this.value='380950948376'}" id="phone" name="phone">
+							<input type="text" value="Введите ваш skype" onclick="if(this.value=='Введите ваш skype'){this.value=''}" onblur="if(this.value==''){this.value='Введите ваш skype'}" id="skype" name="skype">
+							<input type="text" value="Компания" onclick="if(this.value=='Компания'){this.value=''}" onblur="if(this.value==''){this.value='Компания'}" id="company" name="company">
+							<input type="text" value="Ягоды годжи" onclick="if(this.value=='Ягоды годжи'){this.value=''}" onblur="if(this.value==''){this.value='Ягоды годжи'}" id="product" name="product">
+							<input type="text" value="website.com" onclick="if(this.value=='website.com'){this.value=''}" onblur="if(this.value==''){this.value='website.com'}" id="website" name="website">
+							<select id="target" name="target">
+								<option value="target1" selected>Оплаченный заказ</option>
+								<option value="target2">Заполнение формы</option>
+								<option value="target3">Просмотр видео</option>
+							</select>
+							<input type="text" value="600" onclick="if(this.value=='600'){this.value=''}" onblur="if(this.value==''){this.value='600'}" id="remuneration" name="remuneration">
+							<input type="text" value="Женщины 17-45 лет" onclick="if(this.value=='Женщины 17-45 лет'){this.value=''}" onblur="if(this.value==''){this.value='Женщины 17-45 лет'}" id="audience" name="audience">
+							<input type="text" value="2000" onclick="if(this.value=='2000'){this.value=''}" onblur="if(this.value==''){this.value='2000'}" id="amount" name="amount">
+							<input type="text" value="Нет" onclick="if(this.value=='Нет'){this.value=''}" onblur="if(this.value==''){this.value='Нет'}" id="platform" name="platform">
+							<input type="text" value="Россия, Укарина, Казахстан" onclick="if(this.value=='Россия, Укарина, Казахстан'){this.value=''}" onblur="if(this.value==''){this.value='Россия, Укарина, Казахстан'}" id="geography" name="geography">
+							<div class="icon-mark">
+								<input type="text" value="30" onclick="if(this.value=='30'){this.value=''}" onblur="if(this.value==''){this.value='30'}" id="postclick" name="postclick">
+							</div>
+							<div class="chk">
+								<input type="checkbox" id="check2" class="styled"><label for="check2">Контекст (Яндекс.Директ, Google Adsence)</label><br>
+								<input type="checkbox" id="check3" class="styled"><label for="check3">Медийная реклама (баннеры на площадках)</label><br>
+								<input type="checkbox" id="check4" class="styled"><label for="check4">Тизерные сети</label><br>
+								<input type="checkbox" id="check5" class="styled"><label for="check5">Таргетированная реклама в «ВКонтакте»</label><br>
+								<input type="checkbox" id="check6" class="styled"><label for="check6">Таргет.mail.ru</label><br>
+								<input type="checkbox" id="check7" class="styled"><label for="check7">E-mail маркетинг</label><br>
+								<input type="checkbox" id="check8" class="styled"><label for="check8">Другое</label><br>
+							</div>
+							<textarea name="quality" class="quality"></textarea>
+							<textarea name="traffic"></textarea>
+							<input type="submit" class="send_button" value="Отправить">
+							<input type="button" class="cancel_button" value="Отмена">
+						</form>
+					</div>
+					
+                </div>
+            </div>
+            <div class="cf"></div>
+		</div>
+	</main><!-- .content -->
+</div><!-- .wrapper -->
+
+
+<footer class="footer">
+	<div class="footer_wrap">
+		<div class="footer_bl1"> 
+			<p>Для вебмастеров</p>
+			<ul>
+				<li><a href="#">Каталог офферов</a></li>
+				<li><a href="#">Площадки</a></li>
+				<li><a href="#">Инструменты</a></li>
+			</ul> 
+		</div>
+		<div class="footer_bl2">
+			<p>Рекламодателям</p>
+			<ul>
+				<li><a href="#">Документация</a></li>
+				<li><a href="#">Разместить проект</a></li>
+				<li><a href="#">Полезная информация</a></li>
+			</ul>
+		</div>
+		<div class="footer_bl3">
+			<p>Компания</p>
+			<ul>
+				<li><a href="#">Наши вакансии</a></li>
+				<li><a href="#">Онлайн консультант</a></li>
+				<li><a href="./contacts.html">Обратная связь</a></li>
+			</ul>
+		</div>
+		<div class="footer_bl4">
+			<p>Мы в социальных сетях</p>
+			<div class="soc">
+				<a href="#" class="vk"></a>
+				<a href="#" class="fb"></a>
+				<a href="#" class="in"></a>
+				<a href="#" class="tw"></a>
+			</div>
+		</div>
+	</div>
+</footer><!-- .footer -->
+	<script type="text/javascript" src="./js/scripts.js"></script>
+</body>
+</html>

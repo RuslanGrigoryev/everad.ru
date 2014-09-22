@@ -274,6 +274,7 @@ $(document).ready(function(){
     $('input.styled').checkbox(); 
     
     $('.bxslider').bxSlider({
+      auto: true,
       minSlides: 1,
       maxSlides: 6,
       moveSlides: 1,

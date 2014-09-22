@@ -180,7 +180,7 @@ $(document).ready(function(){
                                 $check2.fadeIn(250).animate({'top':'154px'},150,function(){
                                     $check3.fadeIn(250).animate({'top':'154px'},150,function(){
                                         $chartMask.animate({'width':0},700,function(){});
-                                        $baloon.animate({'top':'14px'},700,function(){});
+                                        $baloon.animate({'top':'-30px'},700,function(){});
                                         $animatedValue.animate({percentValue: maxValue}, {
                                             duration: 700,
                                             step: function() {

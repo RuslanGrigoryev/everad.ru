@@ -1099,9 +1099,9 @@ b {
 	right: 50%;
 }
 .contacts_wrap {
-	margin: 25px auto;
-	padding: 0 0 20px;
-	width: 950px;
+	margin: 0 auto;
+	padding: 20px;
+	max-width: 950px;
 }
 .contacts_wrap h4 {
 	color: #191919;
@@ -1111,7 +1111,7 @@ b {
 }
 .contacts_wrap ul li {
 	display: inline-block;
-	margin: 0 55px 0 0;
+	margin: 0 45px 0 0;
 	vertical-align: top;
 }
 .contacts_wrap ul li:last-child {

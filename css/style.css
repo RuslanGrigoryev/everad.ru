@@ -414,7 +414,6 @@ b {
 	height: 52px;
 	width: 328px;
 	line-height: 52px;
-	padding: 0 34px;
 	text-align: center;
 	text-decoration: none;
 }
@@ -758,7 +757,6 @@ b {
 	height: 52px;
 	line-height: 52px;
 	margin: 0 auto;
-	padding: 0 55px;
 }
 #section3-b .sign_button:hover {
 	background: #df5757;
@@ -2172,6 +2170,8 @@ b {
 }
 .banner_r .button_main_master, .banner_l .button_main_adv {
 	display: none;
+	position: relative;
+	z-index: 20;
 }
 
 /*Media styles*/
@@ -2262,7 +2262,7 @@ b {
 		padding: 0 10px;
 	}
 	.sign_button {
-		width: 200px;
+		width: 270px;
 	}
 	.tabs li a {
 		padding: 3px;
@@ -2281,10 +2281,7 @@ b {
 	}
 }
 @media all and (max-width: 400px) {
-	.sign_button {
-		width: 180px;
-	}
 	.banner_box p {
-		display: none;
+		opacity: 0;
 	}
 }

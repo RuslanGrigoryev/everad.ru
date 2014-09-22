@@ -300,7 +300,6 @@ b {
 .menu_mobile .nav li {
 	text-align: left;
 	margin: 0 0 25px 0;
-	display: block;
 }
 .logo-block {
 	position: relative;
@@ -2274,17 +2273,6 @@ b {
 
 /*Media styles*/
 
-@media all and (max-width: 1410px) {
-	.nav {
-		margin: 23px 0 0;
-	}
-	.nav ul {
-		text-align: left;
-	}
-	.nav ul li {
-		margin: 0 10px;
-	}
-}
 @media (min-width: 1109px) and (max-width: 1208px) {
 	.tabs li a {
 		width: 17.52%;

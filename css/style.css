@@ -299,7 +299,8 @@ b {
 }
 .menu_mobile .nav li {
 	text-align: left;
-	margin: 0 0 20px 0;
+	margin: 0 0 25px 0;
+	display: block;
 }
 .logo-block {
 	position: relative;
@@ -1336,6 +1337,7 @@ b {
 }
 #faq-accordion li .question a p {
 	color: #2684c3;
+	margin-right: 20px;
 }
 #faq-accordion li .answer {
 	background: #f8f8f8;
@@ -2267,6 +2269,18 @@ b {
 }
 
 /*Media styles*/
+
+@media all and (max-width: 1410px) {
+	.nav {
+		margin: 23px 0 0;
+	}
+	.nav ul {
+		text-align: left;
+	}
+	.nav ul li {
+		margin: 0 10px;
+	}
+}
 @media (min-width: 1109px) and (max-width: 1208px) {
 	.tabs li a {
 		width: 17.52%;
@@ -2434,6 +2448,9 @@ b {
 	.contacts_wrap .feedback_form .send_button {
 		width: 95%;
 		padding: 10px 0;
+	}
+	.top_title {
+		padding: 25px 6px;
 	}
 }
 @media all and (max-width: 700px) {

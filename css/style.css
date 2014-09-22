@@ -1360,13 +1360,16 @@ b {
 }
 .registration {
 	padding: 0 0 50px;
-	width: 950px;
+	max-width: 950px;
 }
 .registration .tabs2 {
 	margin: 46px 0 0;
+	display: table;
+	width: 100%;
 }
 .registration .tabs2 li {
-	display: inline;
+	display: table-cell;
+	width: 50%;
 }
 .registration .tabs2 li a {
 	background: #f8f8f8;
@@ -1375,10 +1378,10 @@ b {
 	font-family: 'SegoeUISemibold',sans-serif;
 	font-size: 18px;
 	margin: 0 -3px;
-	padding: 28px 24px 18px 6px;
+	padding: 28px 0px 18px 0px;
 	text-align: center;
 	text-decoration: none;
-	width: 46.95%;
+	width: 100%;
 }
 .registration .tabs2 li a:hover,.registration .tabs2 li a.current,.registration .tabs2 li a.current:hover {
 	background: #6cbbe9;
@@ -1431,7 +1434,7 @@ b {
 }
 .registration .cols .line {
 	margin: 23px 0 33px;
-	width: 950px;
+	max-width: 950px;
 }
 .registration .cols .reg_box {
 }

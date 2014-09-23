@@ -112,6 +112,7 @@ function cloneAdvButton () {
 
 $(document).ready(function(){
 
+    $( "#target" ).selectmenu({width: 100});
     cloneAdvButton();
     initPageHeader();
     mobileMenu();

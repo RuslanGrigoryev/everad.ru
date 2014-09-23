@@ -1484,7 +1484,10 @@ b {
 	font-size: 14px;
 	margin: 2px 0 18px 3px;
 	padding: 8px 11px;
-	width: 40%;
+	width: 43%;
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:        border-box;
 }
 .registration .reg_box .registration_form input:focus,.registration .reg_box .registration_form textarea:focus {
 	background: #fff;
@@ -2268,7 +2271,27 @@ b {
 	position: relative;
 	z-index: 20;
 }
-
+.target_action__label {
+	vertical-align: middle;
+}
+.ui-selectmenu-button.ui-state-default {
+	width: 43% !important;
+	background: none;
+	font-size: 14px;
+	font-family: 'SegoeUIRegular',sans-serif;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px 0px 14px 3px;
+}
+.ui-selectmenu-menu .ui-menu .ui-menu-item {
+	padding: 10px 1em 10px 1em;
+	background: none;
+	padding: 10px 1em 10px 1em;
+	background: none;
+	font-size: 14px;
+	font-family: 'SegoeUIRegular',sans-serif;
+	color: #555 !important;
+}
 /*Media styles*/
 
 @media (min-width: 1109px) and (max-width: 1208px) {
@@ -2485,6 +2508,9 @@ b {
 	}
 	.icon-mark {
 		width: 100%;
+	}
+	.ui-selectmenu-button.ui-state-default {
+		width: 100% !important;
 	}
 }
 @media all and (max-width: 700px) {

@@ -120,21 +120,21 @@
 								<option value="target2">Заполнение формы</option>
 								<option value="target3">Просмотр видео</option>
 							</select>
-							<label>Желаемый размер вознаграждения (р):</label>
+							<label for="remuneration">Желаемый размер вознаграждения (р):</label>
 							<input type="text" value="600" onclick="if(this.value=='600'){this.value=''}" onblur="if(this.value==''){this.value='600'}" id="remuneration" name="remuneration">
-							<label>Предпочитаемая аудитория</label>
+							<label for="audience">Предпочитаемая аудитория</label>
 							<input type="text" value="Женщины 17-45 лет" onclick="if(this.value=='Женщины 17-45 лет'){this.value=''}" onblur="if(this.value==''){this.value='Женщины 17-45 лет'}" id="audience" name="audience">
-							<label>Желаемый объём действий в месяц</label>
+							<label for="amount">Желаемый объём действий в месяц</label>
 							<input type="text" value="2000" onclick="if(this.value=='2000'){this.value=''}" onblur="if(this.value==''){this.value='2000'}" id="amount" name="amount">
-							<label>В каких СРА-сетях уже идёт размещения?</label>
+							<label for="platform">В каких СРА-сетях уже идёт размещения?</label>
 							<input type="text" value="Нет" onclick="if(this.value=='Нет'){this.value=''}" onblur="if(this.value==''){this.value='Нет'}" id="platform" name="platform">
-							<label>Требуемая география</label>
+							<label for="geography">Требуемая география</label>
 							<input type="text" value="Россия, Укарина, Казахстан" onclick="if(this.value=='Россия, Укарина, Казахстан'){this.value=''}" onblur="if(this.value==''){this.value='Россия, Укарина, Казахстан'}" id="geography" name="geography">
-							<label>Post-click (количество дней)</label>
+							<label for="postclick">Post-click (количество дней)</label>
 							<div class="icon-mark">
 								<input type="text" value="30" onclick="if(this.value=='30'){this.value=''}" onblur="if(this.value==''){this.value='30'}" id="postclick" name="postclick">
 							</div>
-							<p class="geogr_lbl">Где сейчас проходит размещение рекламы для проекта (если проводится):</p>
+							<label class="geogr_lbl">Где сейчас проходит размещение рекламы для проекта (если проводится):</label>
 							<div class="chk">
 								<input type="checkbox" id="check2" class="styled"><label for="check2">Контекст (Яндекс.Директ, Google Adsence)</label><br>
 								<input type="checkbox" id="check3" class="styled"><label for="check3">Медийная реклама (баннеры на площадках)</label><br>

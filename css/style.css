@@ -765,7 +765,6 @@ b {
 }
 .cols label {
 	color: #3c3c3b !important;
-	font-size: 15px !important;
 	display: inline-block;
 	width: 50%;
 	text-align: right;
@@ -1459,8 +1458,9 @@ b {
 	padding: 11px 0 24px;
 	text-align: right;
 }
-.registration .cols .reg_box_labels .geogr_lbl {
+.registration .cols .geogr_lbl {
 	margin: -6px 0 0;
+	vertical-align: top;
 }
 .registration .cols .reg_box_labels .qual_lbl {
 	margin: 165px 0 0;
@@ -1471,7 +1471,7 @@ b {
 .registration .reg_box .registration_form {
 	float: left;
 	margin: 0 0 0 21px;
-	width: 70%;
+	width: 90%;
 }
 .registration .reg_box .registration_form input {
 	background: #fafafa;
@@ -1492,14 +1492,24 @@ b {
 	content: "";
 	display: block;
 	height: 16px;
-	margin: -44px 0 0 375px;
+	margin: -43px 0 0 270px;
 	position: absolute;
 	width: 16px;
 }
+.registration .reg_box .registration_form .chk label {
+	width: 85%;
+	text-align: left;
+}
 .registration .reg_box .registration_form .chk {
-	margin: -9px 0 0 2px;
-	text-align: right;
-	padding-right: 70px;
+	margin: 0px 0 0 2px;
+	text-align: left;
+	padding-right: 30px;
+	width: 40%;
+	display: inline-block;
+}
+.registration .reg_box .registration_form .chk .checkbox {
+	vertical-align: top;
+	margin-top: 10px;
 }
 .registration .reg_box .registration_form .chk a {
 	color: #2684c3;
@@ -1566,58 +1576,12 @@ b {
 	background: #efefef;
 	box-shadow: 0 2px 0 #eaeaea;
 }
-.registration .reg_box .registration_form .sel_wrap {
-	margin: -3px 0 18px 2px;
+.icon-mark {
+	display: inline-block;
+	width: 40%
 }
-.registration .reg_box .registration_form .sel_wrap select {
-	display: none;
-}
-.registration .reg_box .registration_form .sel_wrap .sel_imul {
-	width: 400px;
-}
-.registration .reg_box .registration_form .sel_imul .sel_selected {
-	background: #fafafa;
-	border: 1px solid #dfe0e0;
-	color: #3c3c3b;
-	cursor: pointer;
-	font-family: 'SegoeUIRegular',sans-serif;
-	font-size: 14px;
-	padding: 8px 12px 7px;
-	position: relative;
-}
-.registration .reg_box .registration_form .sel_imul.act .sel_selected {
-	background: #fafafa;
-}
-.registration .reg_box .registration_form .sel_selected .sel_arraw {
-	background: url(../img/ico.png)no-repeat -158px 0;
-	height: 8px;
-	position: absolute;
-	right: 14px;
-	top: 16px;
-	width: 12px;
-}
-.registration .reg_box .registration_form .sel_imul .sel_options {
-	background: #fff;
-	border: 1px solid #dfe0e0;
-	border-top: none;
-	display: none;
-	overflow: auto;
-	position: absolute;
-	width: 398px;
-	z-index: 10;
-}
-.registration .reg_box .registration_form .sel_options .sel_option {
-	border-left: none;
-	border-right: none;
-	color: #3c3c3b;
-	font-family: 'SegoeUIRegular',sans-serif;
-	font-size: 14px;
-	padding: 8px 12px;
-}
-.registration .reg_box .registration_form .sel_options .sel_option:hover {
-	background: #6cbbe9;
-	color: #fff;
-	cursor: pointer;
+.registration .reg_box .registration_form .icon-mark input {
+	width: 100%;
 }
 .b_article {
 	margin: 40px 0 0 5px;

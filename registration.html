@@ -85,7 +85,7 @@
 							<input type="text" value="Введите пароль" onclick="if(this.value=='Введите пароль'){this.value=''}" onblur="if(this.value==''){this.value='Введите пароль'}" id="password" name="password">
 							<label for="repeat_password">Пароль еще раз:</label>
 							<input type="text" value="Введите пароль еще раз" onclick="if(this.value=='Введите пароль еще раз'){this.value=''}" onblur="if(this.value==''){this.value='Введите пароль еще раз'}" id="repeat_password" name="repeat_password">
-							<div class="chk">
+							<div class="chk chk_agree">
 								<input type="checkbox" id="check1" class="styled">
 								<a href="./rules.html">Согласен с правилами сети EverAD</a>
 							</div>
@@ -144,9 +144,9 @@
 								<input type="checkbox" id="check7" class="styled"><label for="check7">E-mail маркетинг</label><br>
 								<input type="checkbox" id="check8" class="styled"><label for="check8">Другое</label><br>
 							</div>
-							<p class="qual_lbl">Какие источники дали наибольшую отдачу по качеству (если есть)?</p>
+							<label class="qual_lbl">Какие источники дали наибольшую отдачу по качеству (если есть)?</label>
 							<textarea name="quality" class="quality"></textarea>
-							<p class="traf_lbl">Какие источники дали наибольшую отдачу по объему трафика (если есть)?</p>
+							<label class="traf_lbl">Какие источники дали наибольшую отдачу по объему трафика (если есть)?</label>
 							<textarea name="traffic"></textarea>
 							<input type="submit" class="send_button" value="Отправить">
 							<input type="button" class="cancel_button" value="Отмена">

@@ -1462,11 +1462,13 @@ b {
 	margin: -6px 0 0;
 	vertical-align: top;
 }
-.registration .cols .reg_box_labels .qual_lbl {
+.registration .cols .qual_lbl {
 	margin: 165px 0 0;
+	vertical-align: top;
 }
-.registration .cols .reg_box_labels .traf_lbl {
+.registration .cols  .traf_lbl {
 	margin: 72px 0 0;
+	vertical-align: top;
 }
 .registration .reg_box .registration_form {
 	float: left;
@@ -1492,19 +1494,24 @@ b {
 	content: "";
 	display: block;
 	height: 16px;
-	margin: -43px 0 0 270px;
-	position: absolute;
 	width: 16px;
+	position: absolute;
+	right: -16px;
+	top: 11px;
+	z-index: 200;
 }
 .registration .reg_box .registration_form .chk label {
 	width: 85%;
 	text-align: left;
 }
+.registration .reg_box .registration_form .chk_agree {
+	width: 100%;
+}
 .registration .reg_box .registration_form .chk {
 	margin: 0px 0 0 2px;
-	text-align: left;
+	text-align: center;
+	margin: 0 auto;
 	padding-right: 30px;
-	width: 40%;
 	display: inline-block;
 }
 .registration .reg_box .registration_form .chk .checkbox {
@@ -1514,7 +1521,7 @@ b {
 .registration .reg_box .registration_form .chk a {
 	color: #2684c3;
 	font-size: 13px;
-	line-height: 33px;
+	line-height: 38px;
 	margin: 0 0 0 16px;
 	text-decoration: none;
 }
@@ -1538,7 +1545,7 @@ b {
 	width: 357px;
 }
 .registration .reg_box .registration_form .quality {
-	margin: 17px 0 19px;
+	margin: 11px 0 19px;
 }
 .registration .reg_box .registration_form .send_button {
 	background: #5cacda;
@@ -1578,7 +1585,8 @@ b {
 }
 .icon-mark {
 	display: inline-block;
-	width: 40%
+	width: 40%;
+	position: relative;
 }
 .registration .reg_box .registration_form .icon-mark input {
 	width: 100%;
@@ -2470,6 +2478,12 @@ b {
 		margin-left: 5px;
 	}
 	.registration .reg_box .registration_form input {
+		width: 100%;
+	}
+	.registration .reg_box .registration_form textarea {
+		width: 100%;
+	}
+	.icon-mark {
 		width: 100%;
 	}
 }

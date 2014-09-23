@@ -111,7 +111,7 @@ function cloneAdvButton () {
 
 function popup () {
     // Форма попап-окно
-    $(".enter_button").live('click',function(e){
+    $(".header").on('click','.enter_button',function(e){
         e.preventDefault();
         $('.popup_overlay').fadeIn('slow').css('display','block');
         $('#form_popup').fadeIn('slow').css('display','block');

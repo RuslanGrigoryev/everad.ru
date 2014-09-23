@@ -763,9 +763,12 @@ b {
 	font-size: 26px;
 	margin: 0 0 15px;
 }
-.cols p {
-	color: #3c3c3b;
-	font-size: 15px;
+.cols label {
+	color: #3c3c3b !important;
+	font-size: 15px !important;
+	display: inline-block;
+	width: 50%;
+	text-align: right;
 }
 #section3-b .sign_button {
 	background: #f76969;
@@ -1383,6 +1386,7 @@ b {
 	text-align: center;
 	text-decoration: none;
 	width: 100%;
+	border: 1px solid #e7e7e7;
 }
 .registration .tabs2 li a:hover,.registration .tabs2 li a.current,.registration .tabs2 li a.current:hover {
 	background: #6cbbe9;
@@ -1467,18 +1471,18 @@ b {
 .registration .reg_box .registration_form {
 	float: left;
 	margin: 0 0 0 21px;
-	width: 430px;
+	width: 70%;
 }
 .registration .reg_box .registration_form input {
 	background: #fafafa;
 	border: 1px solid #dfe0e0;
 	color: #3c3c3b;
-	display: block;
+	display: inline-block;
 	font-family: 'SegoeUIRegular',sans-serif;
 	font-size: 14px;
 	margin: 2px 0 18px 3px;
 	padding: 8px 11px;
-	width: 375px;
+	width: 40%;
 }
 .registration .reg_box .registration_form input:focus,.registration .reg_box .registration_form textarea:focus {
 	background: #fff;
@@ -1494,6 +1498,8 @@ b {
 }
 .registration .reg_box .registration_form .chk {
 	margin: -9px 0 0 2px;
+	text-align: right;
+	padding-right: 70px;
 }
 .registration .reg_box .registration_form .chk a {
 	color: #2684c3;
@@ -1530,13 +1536,13 @@ b {
 	box-shadow: 0 2px 0 #3688b8;
 	color: #fff;
 	cursor: pointer;
-	display: inline-block;
 	font-size: 14px;
 	line-height: 18px;
 	margin: 24px 0 0;
 	padding: 7px 18px;
 	transition: all 500ms ease 0s;
 	width: 160px;
+	float: right;
 }
 .registration .reg_box .registration_form .send_button:hover {
 	background: #6cbbe9;
@@ -1548,13 +1554,13 @@ b {
 	box-shadow: 0 2px 0 #f3f3f3;
 	color: #2684c3;
 	cursor: pointer;
-	display: inline-block;
 	font-size: 13px;
-	margin: 24px 0 0 13px;
+	margin: 24px 72px 0 13px;
 	padding: 7px 0;
 	transition: all 500ms ease 0s;
 	vertical-align: top;
 	width: 80px;
+	float: right;
 }
 .registration .reg_box .registration_form .cancel_button:hover {
 	background: #efefef;
@@ -2472,9 +2478,35 @@ b {
 		display: block;
 		width: 100%;
 		float: left;
+		margin-bottom: 20px;
 	}
 	.registration .cols .reg_box_labels p {
 		padding: 11px 0 24px 10px;
+	}
+	.cols label {
+		width: 100%;
+		text-align: left;
+		padding-left: 3px;
+		margin-bottom: 5px;
+		margin-left: 0px !important;
+	}
+	.registration .reg_box .registration_form .chk {
+		text-align: left;
+		padding-right: 0;
+		width: 100%;
+	}
+	.registration .reg_box .registration_form .send_button {
+		float: left;
+	}
+	.registration .reg_box .registration_form .cancel_button {
+		float: right;
+	}
+	.registration .reg_box .registration_form {
+		width: 85%;
+		margin-left: 5px;
+	}
+	.registration .reg_box .registration_form input {
+		width: 100%;
 	}
 }
 @media all and (max-width: 700px) {
@@ -2486,5 +2518,11 @@ b {
 	.about1 .ico1, .about2 .ico2, .about3 .ico3 {
 		margin: 0 auto 20px;
 		float: none;
+	}
+	.registration .reg_box .registration_form .cancel_button {
+		margin: 24px 12px 0 13px;
+	}
+	h4 {
+		font-size: 25px;
 	}
 }

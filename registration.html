@@ -76,22 +76,21 @@
                     <h4>Регистрация вебмастера</h4>
 					<div class="line"></div>
 					<div class="reg_box">
-						<div class="reg_box_labels">
-							<p>Имя или никнейм:</p>
-							<p>Электронная почта:</p>
-							<p>Пароль:</p>
-							<p>Пароль еще раз:</p>
-						</div>
 						<form name="master_registration_form" class="registration_form">
+							<label for="name">Имя или никнейм:</label>
 							<input type="text" value="Введите имя" onclick="if(this.value=='Введите имя'){this.value=''}" onblur="if(this.value==''){this.value='Введите имя'}" id="name" name="name">
+							<label for="email">Электронная почта:</label>
 							<input type="text" value="Введите почту" onclick="if(this.value=='Введите почту'){this.value=''}" onblur="if(this.value==''){this.value='Введите почту'}" id="email" name="email">
+							<label for="password">Пароль:</label>
 							<input type="text" value="Введите пароль" onclick="if(this.value=='Введите пароль'){this.value=''}" onblur="if(this.value==''){this.value='Введите пароль'}" id="password" name="password">
+							<label for="repeat_password">Пароль еще раз:</label>
 							<input type="text" value="Введите пароль еще раз" onclick="if(this.value=='Введите пароль еще раз'){this.value=''}" onblur="if(this.value==''){this.value='Введите пароль еще раз'}" id="repeat_password" name="repeat_password">
 							<div class="chk">
-								<input type="checkbox" id="check1" class="styled"><a href="./rules.html">Согласен с правилами сети EverAD</a>
+								<input type="checkbox" id="check1" class="styled">
+								<a href="./rules.html">Согласен с правилами сети EverAD</a>
 							</div>
-							<input type="submit" class="send_button" value="Зарегистрироваться">
 							<input type="button" class="cancel_button" value="Отмена">
+							<input type="submit" class="send_button" value="Зарегистрироваться">
 						</form>
 					</div>
 					
@@ -100,46 +99,42 @@
                     <h4>Регистрация рекламодателя</h4>
 					<div class="line"></div>
 					<div class="reg_box">
-						<div class="reg_box_labels">
-							<p>Фамилия, Имя, Отчество:</p>
-							<p>Электронная почта:</p>
-							<p>Телефон для связи:</p>
-							<p>Skype:</p>
-							<p>Название компании:</p>
-							<p>Рекламируемый продукт (услуга):</p>
-							<p>Адрес сайта (лэндинга):</p>
-							<p>Целевое действие:</p>
-							<p>Желаемый размер вознаграждения (р):</p>
-							<p>Предпочитаемая аудитория</p>
-							<p>Желаемый объём действий в месяц</p>
-							<p>В каких СРА-сетях уже идёт размещения?</p>
-							<p>Требуемая география</p>
-							<p>Post-click (количество дней)</p>
-							<p class="geogr_lbl">Где сейчас проходит размещение рекламы для проекта (если проводится):</p>
-							<p class="qual_lbl">Какие источники дали наибольшую отдачу по качеству (если есть)?</p>
-							<p class="traf_lbl">Какие источники дали наибольшую отдачу по объему трафика (если есть)?</p>
-						</div>
 						<form name="advertiser_order_form" class="registration_form">
+							<label for="name2">Фамилия, Имя, Отчество:</label>
 							<input type="text" value="Иванов Иван Иванович" onclick="if(this.value=='Иванов Иван Иванович'){this.value=''}" onblur="if(this.value==''){this.value='Иванов Иван Иванович'}" id="name2" name="name">
+							<label for="email2">Электронная почта:</label>
 							<input type="text" value="email@mail.ru" onclick="if(this.value=='email@mail.ru'){this.value=''}" onblur="if(this.value==''){this.value='email@mail.ru'}" id="email2" name="email">
+							<label for="phone">Телефон для связи:</label>
 							<input type="text" value="380950948376" onclick="if(this.value=='380950948376'){this.value=''}" onblur="if(this.value==''){this.value='380950948376'}" id="phone" name="phone">
+							<label for="skype">Skype:</label>
 							<input type="text" value="Введите ваш skype" onclick="if(this.value=='Введите ваш skype'){this.value=''}" onblur="if(this.value==''){this.value='Введите ваш skype'}" id="skype" name="skype">
+							<label for="company">Название компании:</label>
 							<input type="text" value="Компания" onclick="if(this.value=='Компания'){this.value=''}" onblur="if(this.value==''){this.value='Компания'}" id="company" name="company">
+							<label for="product">Рекламируемый продукт (услуга):</label>
 							<input type="text" value="Ягоды годжи" onclick="if(this.value=='Ягоды годжи'){this.value=''}" onblur="if(this.value==''){this.value='Ягоды годжи'}" id="product" name="product">
+							<label for="website">Адрес сайта (лэндинга):</label>
 							<input type="text" value="website.com" onclick="if(this.value=='website.com'){this.value=''}" onblur="if(this.value==''){this.value='website.com'}" id="website" name="website">
-							<select id="target" name="target">
+							<label>Целевое действие:</label>
+							<select id="target" class="target_action" name="target">
 								<option value="target1" selected>Оплаченный заказ</option>
 								<option value="target2">Заполнение формы</option>
 								<option value="target3">Просмотр видео</option>
 							</select>
+							<label>Желаемый размер вознаграждения (р):</label>
 							<input type="text" value="600" onclick="if(this.value=='600'){this.value=''}" onblur="if(this.value==''){this.value='600'}" id="remuneration" name="remuneration">
+							<label>Предпочитаемая аудитория</label>
 							<input type="text" value="Женщины 17-45 лет" onclick="if(this.value=='Женщины 17-45 лет'){this.value=''}" onblur="if(this.value==''){this.value='Женщины 17-45 лет'}" id="audience" name="audience">
+							<label>Желаемый объём действий в месяц</label>
 							<input type="text" value="2000" onclick="if(this.value=='2000'){this.value=''}" onblur="if(this.value==''){this.value='2000'}" id="amount" name="amount">
+							<label>В каких СРА-сетях уже идёт размещения?</label>
 							<input type="text" value="Нет" onclick="if(this.value=='Нет'){this.value=''}" onblur="if(this.value==''){this.value='Нет'}" id="platform" name="platform">
+							<label>Требуемая география</label>
 							<input type="text" value="Россия, Укарина, Казахстан" onclick="if(this.value=='Россия, Укарина, Казахстан'){this.value=''}" onblur="if(this.value==''){this.value='Россия, Укарина, Казахстан'}" id="geography" name="geography">
+							<label>Post-click (количество дней)</label>
 							<div class="icon-mark">
 								<input type="text" value="30" onclick="if(this.value=='30'){this.value=''}" onblur="if(this.value==''){this.value='30'}" id="postclick" name="postclick">
 							</div>
+							<p class="geogr_lbl">Где сейчас проходит размещение рекламы для проекта (если проводится):</p>
 							<div class="chk">
 								<input type="checkbox" id="check2" class="styled"><label for="check2">Контекст (Яндекс.Директ, Google Adsence)</label><br>
 								<input type="checkbox" id="check3" class="styled"><label for="check3">Медийная реклама (баннеры на площадках)</label><br>
@@ -149,7 +144,9 @@
 								<input type="checkbox" id="check7" class="styled"><label for="check7">E-mail маркетинг</label><br>
 								<input type="checkbox" id="check8" class="styled"><label for="check8">Другое</label><br>
 							</div>
+							<p class="qual_lbl">Какие источники дали наибольшую отдачу по качеству (если есть)?</p>
 							<textarea name="quality" class="quality"></textarea>
+							<p class="traf_lbl">Какие источники дали наибольшую отдачу по объему трафика (если есть)?</p>
 							<textarea name="traffic"></textarea>
 							<input type="submit" class="send_button" value="Отправить">
 							<input type="button" class="cancel_button" value="Отмена">

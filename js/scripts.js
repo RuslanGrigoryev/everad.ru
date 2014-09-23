@@ -74,8 +74,8 @@ function mobileMenu () {
 
     $button.on('click', function (e) {
 
-        $block.height($(window).height());
         e.preventDefault();
+        $block.height($(window).height());
         if ($('.nav').length == 1) {
             $('.nav').clone().appendTo('.menu_mobile');
             $('.button_enter').clone().prependTo('.menu_mobile');

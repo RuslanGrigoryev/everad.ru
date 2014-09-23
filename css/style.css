@@ -2371,6 +2371,24 @@ b {
 	
 } */
 
+/*Vacancy page styles*/
+.b_box_connection {
+	border-bottom: none;
+}
+.content_vacancy .article_title {
+	font-size: 30px;
+	color: #3c3c3b;
+	padding-bottom: 30px;
+	display: block;
+}
+.content_vacancy .middle {
+	padding: 53px 270px 0 0;
+}
+.vacancy__text {
+	font-size: 15px;
+	color: #3c3c3b;
+	line-height: 20px;
+}
 /*Media styles*/
 
 @media (min-width: 1109px) and (max-width: 1208px) {
@@ -2599,6 +2617,9 @@ b {
 	}
 	.content_error__text {
 		padding: 0 10%;
+	}
+	.right-sidebar_vacancy,.content_vacancy .article_title, .vacancy__text {
+		display: none;
 	}
 }
 @media all and (max-width: 600px) {

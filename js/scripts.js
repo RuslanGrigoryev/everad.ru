@@ -138,12 +138,35 @@ function popup () {
         $('.popup_overlay').fadeOut('slow');
     });
 }
+/*Switch tabs*/
+function tabsSwitch(target, block, blockClassActive, targetClassActive) {
+
+    target.on('click', function (e) {
+        e.preventDefault();
+
+        var $targetData = $(this).data('link');
+
+        target.removeClass(targetClassActive);
+        $(this).addClass(targetClassActive);
+
+        block.each(function () {
+            /*Если атрибут у блока совпадает с атрибутом у ссылки, по которой кликнули*/
+            if ( $(this).data('block') == $targetData ) {
+                block.removeClass(blockClassActive);
+                $(this).addClass(blockClassActive)
+            }
+        })
+
+    });
+
+}
 
 $(document).ready(function(){
 
     if ($('#target').length) {
         $( "#target" ).selectmenu({width: 100});
     }
+    tabsSwitch($('.vacancy__tab__item'), $('.vacancy__list'), 'vacancy__list_active', 'vacancy__tab__item_active');
     popup();
     cloneAdvButton();
     initPageHeader();

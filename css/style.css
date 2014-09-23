@@ -2313,10 +2313,6 @@ b {
 	padding: 0 33%;
 }
 /*Blog page styles*/
-
-.also {
-
-}
 .also__header {
 	font-size: 23px;
 	text-align: center;
@@ -2334,14 +2330,46 @@ b {
 	padding: 10px 0;
 	border-bottom: 1px solid #e8e8e8;
 }
-.also__image {
-
-}
 .also__item__caption {
 	font-size: 16px;
 	color: #2684c3;
 	float: left;
 }
+/*Soc_share list styles*/
+
+/* .soc_share {
+
+}
+.soc_share__item {
+
+}
+.soc_share__icon {
+
+}
+.soc_share__amount {
+
+}
+.soc_share__item__fb {
+
+}
+.soc_share__item__fb .soc_share__icon {
+
+}
+.soc_share__item__tw {
+
+}
+.soc_share__item__tw .soc_share__icon {
+
+}
+.soc_share__item__vk {
+
+}
+.soc_share__item__vk .soc_share__icon {
+
+}
+.soc_share__item__gp .soc_share__icon {
+	
+} */
 
 /*Media styles*/
 

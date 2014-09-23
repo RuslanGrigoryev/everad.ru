@@ -9,7 +9,9 @@
 	<link href="./css/style.css" rel="stylesheet">
 	<link href="./css/animation.css" rel="stylesheet">
 	<link href="./css/jquery.bxslider.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 	<script type="text/javascript" src="http://cdn.jquerytools.org/1.2.7/all/jquery.tools.min.js"></script>
 	<script type="text/javascript" src="./js/lodash.min.js"></script>
 	<script type="text/javascript" src="./js/jquery.bxslider.js"></script>
@@ -90,7 +92,22 @@
 				<div class="b_box b_box_connection">
 					<div class="l_title">Свяжитесь с нами</div>
 					<form action="#" name="form_connection" class="form_connection">
-						
+						<select name="lettertheme" id="target" placeholder="Тема письма">
+							<option value="theme1">theme1</option>
+							<option value="theme2">theme2</option>
+							<option value="theme3">theme3</option>
+							<option value="theme4">theme4</option>
+						</select>
+						<input type="text" placeholder="Имя и фамилия">
+						<input type="text" placeholder="Email">
+						<textarea name="message" id="MessageTheme" class="textarea_simple" cols="30" rows="10" placeholder="Напишите ваше сообщение"></textarea>
+						<label class="button_upload">
+						    <div class="button_upload-text" >Прикрепить файл</div>
+						    <div class='input'>Выберите файл</div>
+						    <input type="file" onchange="this.previousSibling.previousSibling.innerHTML = this.value"/>
+						</label>
+						<span class="file_caption">Не более 5 Мб</span>
+						<input type="submit" class="button_blue" value="Отправить">
 					</form>
 				</div>
 			</aside><!-- .right-sidebar -->

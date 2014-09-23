@@ -1,3 +1,5 @@
+@import url(common.css);
+
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
 	border: 0;
 	font: inherit;
@@ -2291,7 +2293,7 @@ b {
 	background: none;
 	font-size: 14px;
 	font-family: 'SegoeUIRegular',sans-serif;
-	color: #555 !important;
+	color: #939393 !important;
 }
 /*404 page styles*/
 .content_error {
@@ -2388,6 +2390,38 @@ b {
 	font-size: 15px;
 	color: #3c3c3b;
 	line-height: 20px;
+}
+.form_connection .ui-selectmenu-button.ui-state-default {
+	width: 251px !important;
+	margin: 0 0 6px 0px;
+}
+.form_connection .textarea_simple {
+	margin: 6px 0 17px;
+	width: 253px;
+	padding: 9px 12px 6px;
+	height: 137px;
+}
+.form_connection .ui-selectmenu-button span.ui-selectmenu-text {
+	color: #939393;
+}
+.file_caption {
+	color: #bdbdbd;
+	font-size: 12px;
+	display: inline-block;
+	vertical-align: 11px;
+}
+.right-sidebar .button_blue {
+	background: #2684c3;
+	box-shadow: 0 2px 0 #1f638a;
+	border: none;
+	outline: none;
+	width: 137px;
+	color: #fff;
+	cursor: pointer;
+}
+.right-sidebar .button_blue:hover {
+	background: #40aaf1;
+	box-shadow: 0 2px 0 #2684c3;
 }
 /*Media styles*/
 

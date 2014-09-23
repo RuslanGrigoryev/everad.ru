@@ -2312,6 +2312,36 @@ b {
 	font-size: 26px;
 	padding: 0 33%;
 }
+/*Blog page styles*/
+
+.also {
+
+}
+.also__header {
+	font-size: 23px;
+	text-align: center;
+	padding: 50px 0 26px 0;
+}
+.also__list {
+	padding: 30px 0;
+	border-top: 1px solid #e8e8e8;
+}
+.also__item {
+	float: left;
+	min-height: 265px;
+	margin: 10px 8px 0px 0;
+	max-width: 312px;
+	padding: 10px 0;
+	border-bottom: 1px solid #e8e8e8;
+}
+.also__image {
+
+}
+.also__item__caption {
+	font-size: 16px;
+	color: #2684c3;
+	float: left;
+}
 
 /*Media styles*/
 

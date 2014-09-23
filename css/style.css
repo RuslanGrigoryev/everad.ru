@@ -1360,6 +1360,7 @@ b {
 .registration {
 	padding: 0 0 50px;
 	max-width: 950px;
+	min-height: 800px;
 }
 .registration .tabs2 {
 	margin: 46px 0 0;
@@ -1369,6 +1370,7 @@ b {
 .registration .tabs2 li {
 	display: table-cell;
 	width: 50%;
+	position: relative;
 }
 .registration .tabs2 li a {
 	background: #f8f8f8;
@@ -1396,7 +1398,9 @@ b {
 	display: block;
 	height: 0px;
 	line-height: 0;
-	margin: 15px 0 0 221px;
+	margin-top: 15px;
+	left: 50%;
+	margin-left: -6px;
 	position: absolute;
 	width: 0px;
 	z-index: 2;
@@ -1427,6 +1431,9 @@ b {
 	border: none;
 	margin: 0 0 50px;
 	padding: 37px 0 0;
+}
+.registration .panes2 h4 {
+	padding-left: 20px;
 }
 .registration .cols {
 	position: relative;
@@ -2052,6 +2059,13 @@ b {
 }
 .footer__item {
 	display: table-cell;
+	width: 25%;
+}
+.footer__item:nth-child(1), .footer__item:nth-child(2), .footer__item:nth-child(3)  {
+	width:20%;
+}
+.footer__item:nth-child(4) {
+	width: 40%;
 }
 .footer__item_social {
 	text-align: right
@@ -2059,6 +2073,12 @@ b {
 .footer_wrap p {
 	color: #fff;
 	font-size: 15px;
+}
+.footer__item__address p {
+	color: #777777;
+	margin-top: 4px;
+	line-height: 19.5px;
+	text-align: left
 }
 .footer_wrap ul {
 	margin: 10px 0 0;
@@ -2343,8 +2363,12 @@ b {
 	.footer__item {
 		display: none;
 	}
-	.footer__item_social {
-		display: table-cell;
+	.footer__item_addr {
+		display: table;
+		text-align: center;
+		width: 100% !important;
+	}
+	.footer__item__address p {
 		text-align: center;
 	}
 	.why_we ul li  p {
@@ -2443,6 +2467,14 @@ b {
 	}
 	.top_title {
 		padding: 25px 6px;
+	}
+	.registration .tabs2 li {
+		display: block;
+		width: 100%;
+		float: left;
+	}
+	.registration .cols .reg_box_labels p {
+		padding: 11px 0 24px 10px;
 	}
 }
 @media all and (max-width: 700px) {

@@ -27,7 +27,6 @@ function initPageHeader() {
     }
 }
 
-
 function Arrow_Points(){
     var s = $('.b_blog ul').find('li');
     $.each(s,function(i,obj){
@@ -110,11 +109,42 @@ function cloneAdvButton () {
        $btnMaster.clone().appendTo('.banner_r').addClass('button_main_master_clone');               
 }
 
+function popup () {
+    // Форма попап-окно
+    $(".enter_button").live('click',function(e){
+        e.preventDefault();
+        $('.popup_overlay').fadeIn('slow').css('display','block');
+        $('#form_popup').fadeIn('slow').css('display','block');
+        $('#form_popup').addClass('activePopup');
+        var Mtop = -($('.activePopup').outerHeight() / 2) + 'px';
+        var Mleft = -($('.activePopup').outerWidth() / 2) + 'px';
+        $('.activePopup').css({
+            'margin-top' : Mtop,
+            'margin-left' : Mleft,
+            'left' : '50%',
+            'top' : '50%',
+            'z-index':'999999999'
+        });
+    });
+
+    $('.popup_overlay').click(function(){
+    $(this).fadeOut('slow');
+    $('#form_popup').fadeOut('slow');
+        });
+
+    $('.close_btn,.cancel_button').click(function(e){
+        e.preventDefault();
+        $('#form_popup').fadeOut().css('display','none');
+        $('.popup_overlay').fadeOut('slow');
+    });
+}
+
 $(document).ready(function(){
 
     if ($('#target').length) {
         $( "#target" ).selectmenu({width: 100});
     }
+    popup();
     cloneAdvButton();
     initPageHeader();
     mobileMenu();
@@ -411,35 +441,7 @@ $(document).ready(function(){
             inter++;
         });
     });
-        
-
-    // Форма попап-окно
-    $(".enter_button").click(function(e){
-        e.preventDefault();
-        $('.popup_overlay').fadeIn('slow').css('display','block');
-        $('#form_popup').fadeIn('slow').css('display','block');
-        $('#form_popup').addClass('activePopup');
-        var Mtop = -($('.activePopup').outerHeight() / 2) + 'px';
-        var Mleft = -($('.activePopup').outerWidth() / 2) + 'px';
-        $('.activePopup').css({
-            'margin-top' : Mtop,
-            'margin-left' : Mleft,
-            'left' : '50%',
-            'top' : '50%',
-            'z-index':'999999999'
-        });
-    });
-
-    $('.popup_overlay').click(function(){
-    $(this).fadeOut('slow');
-    $('#form_popup').fadeOut('slow');
-        });
-
-    $('.close_btn,.cancel_button').click(function(e){
-        e.preventDefault();
-        $('#form_popup').fadeOut().css('display','none');
-        $('.popup_overlay').fadeOut('slow');
-    });
+    
     
     $('#faq-accordion').accordion({
         canToggle: true,

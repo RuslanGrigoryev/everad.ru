@@ -2152,6 +2152,7 @@ b {
 	height: 300px;
 	position: fixed;
 	width: 630px;
+	z-index: 200;
 }
 .form_popup_top {
 	background: #fafafa;
@@ -2513,7 +2514,32 @@ b {
 		width: 100% !important;
 	}
 }
-@media all and (max-width: 700px) {
+@media all and (max-width: 600px) {
+	#form_popup.activePopup {
+		width: 296px;
+		height: 450px;
+	}
+	#form_popup .order_form, #form_popup .not_account {
+		float: none;
+		width: 100%;
+		padding: 28px;
+		-moz-box-sizing:    border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing:        border-box;
+		margin: 0;
+	}
+	#form_popup .order_form input[type="text"], #form_popup .order_form input[type="password"] {
+		-moz-box-sizing:    border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing:        border-box;
+		width: 100%;
+	}
+	#form_popup .order_form label {
+		margin: 0 5px 0 8px;
+	}
+	#form_popup .not_account p {
+	text-align: left;
+	}
 }
 @media all and (max-width: 400px) {
 	.good__chart_b3, .good__layout {

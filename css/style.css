@@ -2293,7 +2293,18 @@ b {
 	background: none;
 	font-size: 14px;
 	font-family: 'SegoeUIRegular',sans-serif;
-	color: #939393 !important;
+	color: #6cbbe9 !important;
+	border: none;
+}
+.ui-selectmenu-menu .ui-menu .ui-menu-item.ui-state-focus {
+	background: #6cbbe9;
+	color: #fff !important
+}
+.ui-selectmenu-menu .ui-widget-content {
+	border: none;
+}
+.ui-state-hover {
+	border: 1px solid #d3d3d3 !important ;
 }
 /*404 page styles*/
 .content_error {

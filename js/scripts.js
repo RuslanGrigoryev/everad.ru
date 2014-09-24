@@ -160,6 +160,22 @@ function tabsSwitch(target, block, blockClassActive, targetClassActive) {
     });
 
 }
+/*Vacancy Toggle*/
+function toggleBlocks () {
+
+    var $link  = $('.vacancy__list__link'),
+        $block = $('.vacancy__list__content');
+
+        $link.on('click', function (e) {
+            e.preventDefault();
+            var $self = $(this);
+            $self.next('.vacancy__list__content').slideToggle('slow', function () {
+
+                $self.toggleClass('vacancy__list__link_active');
+
+            });
+        }) 
+}
 
 $(document).ready(function(){
 
@@ -171,6 +187,7 @@ $(document).ready(function(){
     cloneAdvButton();
     initPageHeader();
     mobileMenu();
+    toggleBlocks();
     $(window).resize(initPageHeader);
     
     $('section[data-type="background"]').each(function(){

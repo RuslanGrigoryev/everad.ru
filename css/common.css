@@ -29,7 +29,7 @@ label.button_upload .button_upload-text {
     text-align: center;
     color: #0075b7;
     display: inline-block;
-    background: url(../img/ico-file.png) 6px 8px no-repeat;
+    background: url(../img/ico-file.png) left center no-repeat;
 }
 .button_blue {
 	background: #2684c3;

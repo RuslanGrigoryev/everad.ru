@@ -2377,6 +2377,11 @@ b {
 .b_box_connection {
 	border-bottom: none;
 }
+.b_box_feedback .l_title {
+	color: #191919;
+	font-size: 20px;
+	font-family: 'SegoeUISemibold';
+}
 .content_vacancy {
 	padding-bottom: 220px;
 }
@@ -2540,6 +2545,27 @@ b {
 	min-width: 60px;
 }
 
+/*Vacancy page styles*/
+
+.content_vacancy_page .article_title {
+	font-size: 26px;
+	color: #3c3c3b;
+	font-weight: bold;
+}
+.media-display {
+	display: inline-block;
+}
+.vacancy__info {
+	display: table;
+	width: 100%;
+	min-height: 50px;
+}
+.vacancy__info__item {
+	display: table-cell;
+	min-height: 50px;
+	width: 33.333333%;
+	vertical-align: middle;
+}
 /*Media styles*/
 
 @media (min-width: 1109px) and (max-width: 1208px) {
@@ -2796,6 +2822,13 @@ b {
 	}
 	.vacancy__list__link-position {
 		line-height: 30px;
+	}
+	.media-display {
+		display: none;
+	}
+	.content_vacancy_page .article_title {
+		display: block;
+		text-align: center;
 	}
 }
 @media all and (max-width: 600px) {

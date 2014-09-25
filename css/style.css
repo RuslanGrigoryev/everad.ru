@@ -235,8 +235,8 @@ b {
 	color: #00D6CC;
 }
 .enter_button {
-	background: #2684c3;
-	box-shadow: 0 2px 0 #1f638a;
+	background: #40aaf1;
+	box-shadow: 0 2px 0 #2684c3;
 	color: #fff;
 	float: left;
 	font-family: 'SegoeUISemibold',sans-serif;
@@ -313,8 +313,8 @@ b {
 	height: 100%;
 }
 .enter_button:hover {
-	background: #40aaf1;
-	box-shadow: 0 2px 0 #2684c3;
+	background: #2684c3;
+	box-shadow: 0 2px 0 #1f638a;
 }
 .active_enter_button {
 	background: #f76969;

@@ -1187,7 +1187,7 @@ b {
 	background: #fff;
 }
 .contacts_wrap .feedback_form .send_button {
-	background: #3598db;
+	background: #6cbbe9;
 	border: none;
 	box-shadow: 0 2px 0 #2278b3;
 	color: #fff;
@@ -1199,7 +1199,7 @@ b {
 	transition: all 500ms ease 0s;
 }
 .contacts_wrap .feedback_form .send_button:hover {
-	background: #6cbbe9;
+	background: #3598db;
 	box-shadow: 0 2px 0 #4396c7;
 }
 .top_title {
@@ -1575,9 +1575,9 @@ b {
 	margin: 11px 0 19px;
 }
 .registration .reg_box .registration_form .send_button {
-	background: #5cacda;
+	background: #6cbbe9;
 	border: none;
-	box-shadow: 0 2px 0 #3688b8;
+	box-shadow: 0 2px 0 #4396c7;
 	color: #fff;
 	cursor: pointer;
 	font-size: 14px;
@@ -1585,11 +1585,11 @@ b {
 	margin: 24px 0 0;
 	padding: 7px 18px;
 	transition: all 500ms ease 0s;
-	width: 160px;
+	width: 170px;
 }
 .registration .reg_box .registration_form .send_button:hover {
-	background: #6cbbe9;
-	box-shadow: 0 2px 0 #4396c7;
+	background: #5cacda;
+	box-shadow: 0 2px 0 #3688b8;
 }
 .registration .reg_box .registration_form .cancel_button {
 	background: #fafafa;
@@ -2467,8 +2467,8 @@ b {
 	left: -5px;
 }
 .right-sidebar .button_blue {
-	background: #2684c3;
-	box-shadow: 0 2px 0 #1f638a;
+	background: #40aaf1;
+	box-shadow: 0 2px 0 #2684c3;
 	border: none;
 	outline: none;
 	width: 137px;
@@ -2476,8 +2476,8 @@ b {
 	cursor: pointer;
 }
 .right-sidebar .button_blue:hover {
-	background: #40aaf1;
-	box-shadow: 0 2px 0 #2684c3;
+	background: #2684c3;
+	box-shadow: 0 2px 0 #1f638a;
 }
 .vacancy__tab {
 	display: table;

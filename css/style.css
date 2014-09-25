@@ -2365,15 +2365,23 @@ b {
 .also__item {
 	float: left;
 	min-height: 265px;
-	margin: 10px 8px 0px 0;
+	margin: 10px 8px 10px 0;
 	max-width: 312px;
-	padding: 10px 0;
-	border-bottom: 1px solid #e8e8e8;
+	border-bottom: 2px solid #e8e8e8;
+	background: #fafafa;
+}
+.also__item a {
+	display: block;
+}
+.also__item img {
+	width: 100%;
 }
 .also__item__caption {
 	font-size: 16px;
 	color: #2684c3;
 	float: left;
+	padding: 15px 10px;
+	line-height: 20px;
 }
 /*Soc_share list styles*/
 

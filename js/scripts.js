@@ -330,7 +330,6 @@ $(document).ready(function(){
       auto: true,
       minSlides: 1,
       maxSlides: 6,
-      moveSlides: 1,
       slideWidth: 182,
       slideMargin: 0.34,
       pager:false

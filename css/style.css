@@ -882,6 +882,11 @@ b {
 	display: inline-block;
 	width: 100px;
 	text-align: center;
+	text-align: right;
+	padding-right: 20px;
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:        border-box;
 }
 #section4-a {
 }
@@ -2455,10 +2460,13 @@ b {
 	color: #3c3c3b;
 	line-height: 20px;
 }
-.form_connection .ui-selectmenu-button.ui-state-default {
+.reg_box .ui-selectmenu-button.ui-state-default {
+	width: 43% !important;
+}
+.ui-selectmenu-button.ui-state-default {
 	width: 251px !important;
 	margin: 0 0 6px 0px;
-	background: #fafafa;
+	background: #fafafa url(../img/select_arrow.png) 96% center no-repeat;
 }
 .form_connection .textarea_simple {
 	margin: 0px 0 17px;
@@ -3003,6 +3011,9 @@ b {
 		display: block;
 		width: 100%;
 		margin-bottom: 30px;
+	}
+	.reg_box .ui-selectmenu-button.ui-state-default {
+		width: 100% !important;
 	}
 }
 @media all and (max-width: 600px) {

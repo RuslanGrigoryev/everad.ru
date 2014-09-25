@@ -326,14 +326,7 @@ $(document).ready(function(){
 
     $('input.styled').checkbox(); 
     
-    $('.bxslider').bxSlider({
-      auto: true,
-      minSlides: 1,
-      maxSlides: 6,
-      slideWidth: 182,
-      slideMargin: 0.34,
-      pager:false
-    });
+    $(".owl-slider").owlCarousel();
     
 
     $('.bxslider2').bxSlider({

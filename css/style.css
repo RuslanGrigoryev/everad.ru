@@ -1,6 +1,7 @@
 @import url(libs/common.css);
 @import url(libs/animation.css);
 @import url(libs/jquery.bxslider.css);
+@import url(libs/owl.carousel.css);
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
 	border: 0;
@@ -529,7 +530,7 @@ b {
 }
 #section2 {
 	background: url(../img/sec2_bg.jpg)no-repeat center bottom fixed;
-	min-height: 413px;
+	min-height: 383px;
 	padding: 39px 0 0;
 }
 .bxslider {
@@ -542,7 +543,7 @@ b {
 	border: 1px solid #dedede;
 	box-shadow: -4px 4px 0 rgba(0,0,0,.05);
 	height: 190px;
-	margin: 5px;
+	margin: 5px auto;
 	padding: 15px 13px;
 	webkit-box-shadow: -4px 4px 0 rgba(0,0,0,.05);
 	width: 150px;

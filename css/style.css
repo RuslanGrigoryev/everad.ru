@@ -1127,17 +1127,17 @@ b {
 }
 .contacts_wrap h4 {
 	color: #191919;
+	padding: 0;
 }
 .contacts_wrap ul {
 	margin: 0 0 60px;
+	display: table;
 }
 .contacts_wrap ul li {
-	display: inline-block;
 	margin: 0 45px 0 0;
 	vertical-align: top;
-}
-.contacts_wrap ul li:last-child {
-	margin: 0;
+	display: table-cell;
+	width: 33%;
 }
 .contacts_wrap ul li h6 {
 	margin: 0 0 10px;
@@ -1195,7 +1195,7 @@ b {
 	display: block;
 	font-size: 26px;
 	margin: 19px 0 0;
-	padding: 10px 105px 14px;
+	padding: 10px 110px 14px;
 	transition: all 500ms ease 0s;
 }
 .contacts_wrap .feedback_form .send_button:hover {
@@ -2824,18 +2824,18 @@ b {
 		-moz-box-sizing:    border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing:        border-box;
-		width: 95%;
+		width: 99%;
 		float: none;
 	}
 	.contacts_wrap .feedback_form input[type="text"] {
-		width: 95%;
+		width: 99%;
 		margin: 20px 0;
 		-moz-box-sizing:    border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing:        border-box;
 	}
 	.contacts_wrap .feedback_form .send_button {
-		width: 95%;
+		width: 99%;
 		padding: 10px 0;
 	}
 	.top_title {
@@ -2969,6 +2969,14 @@ b {
 		-moz-box-sizing:    border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing:        border-box;
+	}
+	.contacts_wrap ul {
+		margin: 0;
+	}
+	.contacts_wrap ul li {
+		display: block;
+		width: 100%;
+		margin-bottom: 30px;
 	}
 }
 @media all and (max-width: 600px) {

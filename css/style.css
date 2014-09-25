@@ -1316,10 +1316,11 @@ b {
 .faq p {
 	color: #3c3c3b;
 	font-size: 18px;
+	padding: 0 10px;
 	line-height: 23px;
 }
 #faq-accordion {
-	margin: 33px 0;
+	margin: 33px 8px 33px 0;
 }
 #faq-accordion li {
 	margin: 0 0 20px;
@@ -2508,13 +2509,13 @@ b {
 	min-height: 500px;
 	margin-top: 50px;
 	background: #fdfdfd;
-	padding: 0 10px;
 	-moz-box-sizing:    border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing:        border-box;
+	border: 1px solid #e6e6e6;
 }
 .vacancy__list__content  {
-	padding-top: 20px;
+	padding: 20px 10px;
 }
 .vacancy__list_active {
 	display: block;
@@ -2573,15 +2574,15 @@ b {
 	font-size: 18px;
 	font-family: 'SegoeUISemibold';
 	display: block;
-	padding: 20px 30px;
+	padding: 20px 40px;
 	border-bottom: 1px solid #e6e6e6;
 	text-decoration: none;
-	background: url(../img/ico-arrow-down-blue.png) no-repeat;
-	background-position: 3px center;
+	background: #fdfdfd url(../img/ico-arrow-down-blue.png) no-repeat;
+	background-position: 18px center;
 }
 .vacancy__list__link_active {
 	background: url(../img/ico-arrow-right-blue.png) no-repeat;
-	background-position: 3px center;
+	background-position: 13px center;
 }
 .vacancy__list__content__block {
 	min-height: 30px;
@@ -2912,12 +2913,16 @@ b {
 		-webkit-box-sizing: border-box;
 		box-sizing:        border-box;
 	}
+	.vacancy__list {
+		background: #fff;
+	}
 	.vacancy__list__link {
 		font-weight: bold;
-		background-position: right center;
+		background: #f5f5f5 url(../img/ico-arrow-down-blue.png) 98% center no-repeat;
+		padding: 20px 10px;
 	}
 	.vacancy__list__link_active {
-		background-position: right center;
+		background-position: 98% center;
 	}
 	.vacancy__list__text {
 		display: none;
@@ -3002,6 +3007,7 @@ b {
 	}
 	h4 {
 		font-size: 25px;
+		padding: 0 10px;
 	}
 }
 @media all and (max-width: 550px ) {

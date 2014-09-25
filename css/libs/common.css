@@ -23,13 +23,17 @@ label.button_upload input {
 }
 
 label.button_upload .button_upload-text {
-    width: 150px;
-    font-size: 12px;
-    line-height: 30px;
-    text-align: center;
-    color: #0075b7;
-    display: inline-block;
-    background: url(../../img/ico-file.png) left center no-repeat;
+   font-size: 12px;
+   line-height: 30px;
+   text-align: center;
+   color: #0075b7;
+   display: inline-block;
+   background: #f3f2f2 url(../../img/ico-file.png) 8px 9px no-repeat;
+   padding: 0 10px 0 30px;
+   vertical-align: middle;
+   -moz-box-sizing:    border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing:        border-box;
 }
 .button_blue {
 	background: #2684c3;

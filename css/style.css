@@ -2012,7 +2012,7 @@ b {
 	margin: 12px 0 0;
 }
 .right-sidebar input {
-	background: #fff;
+	background: #fafafa;
 	border: 1px solid #dfe0e0;
 	color: #3c3c3b;
 	display: block;
@@ -2412,6 +2412,7 @@ b {
 /*Vacancy page styles*/
 .b_box_connection {
 	border-bottom: none;
+	background: none;
 }
 .b_box_feedback .l_title {
 	color: #191919;
@@ -2438,9 +2439,10 @@ b {
 .form_connection .ui-selectmenu-button.ui-state-default {
 	width: 251px !important;
 	margin: 0 0 6px 0px;
+	background: #fafafa;
 }
 .form_connection .textarea_simple {
-	margin: 6px 0 17px;
+	margin: 0px 0 17px;
 	width: 253px;
 	padding: 9px 12px 6px;
 	height: 137px;
@@ -2452,7 +2454,16 @@ b {
 	color: #bdbdbd;
 	font-size: 12px;
 	display: inline-block;
-	vertical-align: 11px;
+	height: 30px;
+	vertical-align: middle;
+	padding: 10px;
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:        border-box;
+	background: #fafafa;
+	position: relative;
+	top: -11px;
+	left: -5px;
 }
 .right-sidebar .button_blue {
 	background: #2684c3;
@@ -2496,6 +2507,14 @@ b {
 	display: none;
 	min-height: 500px;
 	margin-top: 50px;
+	background: #fdfdfd;
+	padding: 0 10px;
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:        border-box;
+}
+.vacancy__list__content  {
+	padding-top: 20px;
 }
 .vacancy__list_active {
 	display: block;
@@ -2510,7 +2529,7 @@ b {
 	z-index: 200;
 	bottom: -10px;
 	left: 50%;
-	margin-left: -7px;
+	margin-left: -10px;
 	width: 0px;
 	height: 0px;
 	border-left: 20px solid transparent;
@@ -2557,7 +2576,6 @@ b {
 	padding: 20px 30px;
 	border-bottom: 1px solid #e6e6e6;
 	text-decoration: none;
-	margin-bottom: 20px;
 	background: url(../img/ico-arrow-down-blue.png) no-repeat;
 	background-position: 3px center;
 }
@@ -2595,6 +2613,12 @@ b {
 	display: table;
 	width: 100%;
 	min-height: 50px;
+	background: #fdfdfd;
+	border: 1px solid #eeeeee;
+	padding: 0 10px 0 20px;
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:        border-box;
 }
 .vacancy__info__item {
 	display: table-cell;
@@ -2624,8 +2648,10 @@ b {
 	color: #3c3c3b;
 	font-size: 18px;
 	font-weight: bold;
-	padding: 35px 0;
+	padding: 35px 0 20px 0;
 	display: block;
+	border-bottom: 1px solid #ececec;
+	margin-bottom: 20px;
 }
 .vacancy_page__list {
 	padding-left: 20px;
@@ -2916,7 +2942,7 @@ b {
 		right: 50%;
 		margin-right: -150px;
 	}
-	.registration .tabs2 li .current:after {
+	.registration .tabs2 li .current:after, .vacancy__tab__item_active:after {
 		display: none;
 	}
 	.registration .reg_box .registration_form .chk label {
@@ -2926,6 +2952,18 @@ b {
 	}
 	.cols .label_hidden {
 		display: none;
+	}
+	.vacancy__info {
+		padding: 0;
+	}
+	.vacancy__info__item {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		border-bottom: 1px solid #ececec;
+		-moz-box-sizing:    border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing:        border-box;
 	}
 }
 @media all and (max-width: 600px) {

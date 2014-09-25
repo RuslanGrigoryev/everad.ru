@@ -507,6 +507,7 @@ b {
 	font-size: 17px;
 	line-height: 25px;
 	margin: 22px 0 15px;
+	font-weight: bold;
 }
 .item2 p {
 	margin: 0 auto;
@@ -633,7 +634,6 @@ b {
 	border-bottom: 4px solid #f3f3f3;
 	border-top: 4px solid #eee;
 	margin: 0 auto;
-	min-height: 569px;
 	padding: 43px 0 0;
 }
 .sec3_wrap {
@@ -700,6 +700,10 @@ b {
 	max-width: 1252px;
 	width: 100%;
 	display: table;
+	padding: 0 10px;
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:        border-box;
 }
 .tabs li {
 	display: table-cell;
@@ -723,7 +727,6 @@ b {
 	font-size: 16px;
 }
 .tabs li a:hover {
-	background: #f4f4f4;
 	text-decoration: none;
 }
 .tabs li a span {
@@ -755,14 +758,18 @@ b {
 	background: #fff;
 	border: 1px solid #e6e6e6;
 	border-top: none;
-	margin: 0 0 53px;
+	margin: 0 10px 53px 10px;
 	min-height: 100px;
-	padding: 30px 30px 18px 55px;
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:        border-box;
+	min-height: 140px;
 }
 .cols {
 	line-height: 20px;
 	max-width: 1200px;
 	position: absolute;
+	padding: 30px 40px 18px 40px;
 }
 .cols h5 {
 	color: #191919;
@@ -818,6 +825,7 @@ b {
 	vertical-align: top;
 	width: 70%;
 	text-align: left;
+	font-style: italic;
 }
 .why_we ul li p span {
 	display: block;
@@ -825,6 +833,7 @@ b {
 	font-size: 23px;
 	line-height: 32px;
 	margin: 0 0 6px;
+	font-style: normal;
 }
 .why_we ul li .ico1 {
 	background-position: 0 -133px;
@@ -2385,7 +2394,7 @@ b {
 }
 /*Soc_share list styles*/
 
-/* .soc_share {
+ .soc_share {
 
 }
 .soc_share__item {
@@ -2417,7 +2426,7 @@ b {
 }
 .soc_share__item__gp .soc_share__icon {
 	
-} */
+}
 
 /*Vacancy page styles*/
 .b_box_connection {
@@ -2721,6 +2730,9 @@ b {
 
 /*Mobile*/
 @media only screen and (max-width: 850px) { 
+	h2 {
+		line-height: 50px;
+	}
 	.right_slide {
 		float: none;
 		width: 100%;
@@ -2762,12 +2774,14 @@ b {
 	}
 	.sign_button {
 		width: 270px;
+		position: relative;
+		top: -25px;
 	}
 	.tabs li a {
 		padding: 3px;
 	}
 	.panes {
-		min-height: 190px;
+		min-height: 260px;
 	}
 	.banner_r .button_main_master, .banner_l .button_main_adv {
 		display: block;
@@ -2821,10 +2835,13 @@ b {
 	}
 	#section5 {
 		min-height: 246px;
-		padding: 50px 0 0;
+		padding: 35px 0 0;
 		-moz-box-sizing:    border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing:        border-box;
+	}
+	#section5 h2 {
+		line-height: 44px;
 	}
 	.contacts_wrap .feedback_form {
 		max-width: 535px;

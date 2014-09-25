@@ -450,7 +450,7 @@ b {
 }
 #section1 {
 	border-bottom: 4px solid #f4f4f4;
-	padding: 67px 0 50px 0;
+	padding: 0px 0 50px 0;
 }
 .section_why {
 	max-width: 1252px;
@@ -804,7 +804,7 @@ b {
 }
 .why_we>ul>li>ul>li {
 	margin: 0 0 9px;
-	min-height: 230px;
+	min-height: 130px;
 	padding: 0 20px;
 	text-align: center;
 }
@@ -816,6 +816,7 @@ b {
 	line-height: 20px;
 	vertical-align: top;
 	width: 70%;
+	text-align: left;
 }
 .why_we ul li p span {
 	display: block;
@@ -1065,7 +1066,7 @@ b {
 }
 #section5 {
 	background: url(../img/sec5_bg.jpg)no-repeat center bottom fixed;
-	min-height: 156px;
+	min-height: 151px;
 	padding: 25px 0 0;
 }
 #section5 h2 {
@@ -1253,7 +1254,7 @@ b {
 	padding: 26px 20px 56px 20px;
 }
 .about4 {
-	padding: 26px 20px 56px 20px;
+	padding: 26px 20px 26px 20px;
 }
 .about h4 {
 	float: left;
@@ -1373,6 +1374,10 @@ b {
 	margin: 46px 0 0;
 	display: table;
 	width: 100%;
+	padding: 0 10px;
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:        border-box;
 }
 .registration .tabs2 li {
 	display: table-cell;
@@ -1487,7 +1492,7 @@ b {
 	display: inline-block;
 	font-family: 'SegoeUIRegular',sans-serif;
 	font-size: 14px;
-	margin: 2px 0 18px 3px;
+	margin: 2px 0 18px 0px;
 	padding: 8px 11px;
 	width: 43%;
 	-moz-box-sizing:    border-box;
@@ -1504,27 +1509,29 @@ b {
 	height: 16px;
 	width: 16px;
 	position: absolute;
-	right: -16px;
+	right: 7px;
 	top: 11px;
 	z-index: 200;
 }
 .registration .reg_box .registration_form .chk label {
-	width: 85%;
+	width: 88%;
 	text-align: left;
+	padding: 3px 0 0 0px;
 }
 .registration .reg_box .registration_form .chk_agree {
 	width: 100%;
 }
 .registration .reg_box .registration_form .chk {
 	margin: 0px 0 0 2px;
-	text-align: center;
-	margin: 0 auto;
 	padding-right: 30px;
 	display: inline-block;
+	width: 40%;
+}
+.registration .reg_box .registration_form .chk label {
+	color: #2684c3 !important;
 }
 .registration .reg_box .registration_form .chk .checkbox {
-	vertical-align: top;
-	margin-top: 10px;
+	vertical-align: middle;
 }
 .registration .reg_box .registration_form .chk a {
 	color: #2684c3;
@@ -1536,8 +1543,19 @@ b {
 .registration .reg_box .registration_form label {
 	color: #2684c3;
 	font-size: 13px;
-	line-height: 33px;
+	line-height: 24px;
 	margin: 0 0 0 16px;
+	padding: 0 10px 0 0;
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:        border-box;
+}
+.label_hidden {
+	opacity: 0;
+}
+.registration .reg_box .registration_form label.geogr_lbl, .registration .reg_box .registration_form label.traf_lbl, .registration .reg_box .registration_form label.qual_lbl {
+	line-height: 22px;
+	padding: 4px 10px 4px 0;
 }
 .registration .reg_box .registration_form textarea {
 	background: #fafafa;
@@ -1550,7 +1568,7 @@ b {
 	outline: none;
 	padding: 15px 20px;
 	resize: none;
-	width: 357px;
+	width: 38%;
 }
 .registration .reg_box .registration_form .quality {
 	margin: 11px 0 19px;
@@ -1567,7 +1585,6 @@ b {
 	padding: 7px 18px;
 	transition: all 500ms ease 0s;
 	width: 160px;
-	float: right;
 }
 .registration .reg_box .registration_form .send_button:hover {
 	background: #6cbbe9;
@@ -1585,7 +1602,6 @@ b {
 	transition: all 500ms ease 0s;
 	vertical-align: top;
 	width: 80px;
-	float: right;
 }
 .registration .reg_box .registration_form .cancel_button:hover {
 	background: #efefef;
@@ -1593,7 +1609,7 @@ b {
 }
 .icon-mark {
 	display: inline-block;
-	width: 40%;
+	width: 43%;
 	position: relative;
 }
 .registration .reg_box .registration_form .icon-mark input {
@@ -2039,7 +2055,7 @@ b {
 .footer_wrap {
 	margin: 0 auto;
 	max-width: 1250px;
-	padding: 33px 20px 0 20px;
+	padding: 40px 20px 0 20px;
 	display: table;
 	width: 100%;
 }
@@ -2287,7 +2303,7 @@ b {
 	font-family: 'SegoeUIRegular',sans-serif;
 	display: inline-block;
 	vertical-align: middle;
-	margin: 0px 0px 14px 3px;
+	margin: 0px 0px 14px 0px;
 }
 .ui-selectmenu-menu .ui-menu .ui-menu-item {
 	padding: 10px 1em 10px 1em;
@@ -2304,7 +2320,13 @@ b {
 	color: #fff !important
 }
 .ui-selectmenu-menu .ui-widget-content {
-	border: none;
+	border-right: 1px solid #d3d3d3;
+	border-left: 1px solid #d3d3d3;
+	border-bottom: 1px solid #d3d3d3;
+	border-top: none;
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:        border-box;
 }
 .ui-state-hover {
 	border: 1px solid #d3d3d3 !important ;
@@ -2813,21 +2835,25 @@ b {
 		padding-right: 0;
 		width: 100%;
 	}
-	.registration .reg_box .registration_form .send_button {
-		float: left;
-	}
-	.registration .reg_box .registration_form .cancel_button {
-		float: right;
-	}
 	.registration .reg_box .registration_form {
-		width: 85%;
-		margin-left: 5px;
+		width: 100%;
+		-moz-box-sizing:    border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing:        border-box;
+		margin: 0;
+		padding: 0 5px;
 	}
 	.registration .reg_box .registration_form input {
 		width: 100%;
+		-moz-box-sizing:    border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing:        border-box;
 	}
 	.registration .reg_box .registration_form textarea {
 		width: 100%;
+		-moz-box-sizing:    border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing:        border-box;
 	}
 	.icon-mark {
 		width: 100%;
@@ -2836,13 +2862,14 @@ b {
 		width: 100% !important;
 	}
 	.content_error__num {
-		font-size: 190px;
+		font-size: 120px;
 	}
 	.content_error__image {
 		width: 80%;
 	}
 	.content_error__text {
 		padding: 0 10%;
+		font-size: 18px;
 	}
 	.right-sidebar_vacancy,.content_vacancy .article_title, .vacancy__text {
 		display: none;
@@ -2882,6 +2909,24 @@ b {
 	.vacancy_page__list li {
 		margin-bottom: 10px;
 	}
+	.item_wrap {
+		background: none;
+	}
+	.bx-wrapper .bx-pager {
+		right: 50%;
+		margin-right: -150px;
+	}
+	.registration .tabs2 li .current:after {
+		display: none;
+	}
+	.registration .reg_box .registration_form .chk label {
+		width: 86%;
+		padding: 3px 0 0 20px;
+		vertical-align: middle;
+	}
+	.cols .label_hidden {
+		display: none;
+	}
 }
 @media all and (max-width: 600px) {
 	#form_popup.activePopup {
@@ -2914,14 +2959,20 @@ b {
 	.good__chart_b3, .good__layout {
 		display: none;
 	}
-	.about1 .ico1, .about2 .ico2, .about3 .ico3 {
-		margin: 0 auto 20px;
-		float: none;
-	}
 	.registration .reg_box .registration_form .cancel_button {
 		margin: 24px 12px 0 13px;
 	}
 	h4 {
 		font-size: 25px;
+	}
+}
+@media all and (max-width: 550px ) {
+	.about1 .ico1, .about2 .ico2, .about3 .ico3 {
+		margin: 0 auto 20px;
+		float: none;
+	}
+	.about4 h2, .about4 .desc {
+		text-align: left;
+		padding: 0;
 	}
 }

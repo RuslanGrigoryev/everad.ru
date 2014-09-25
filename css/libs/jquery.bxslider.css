@@ -80,9 +80,9 @@
 	color: #666;
 	padding-top: 20px;
 	display: block;
-	right: 50%;
-	margin-right: -150px;
-	bottom: -30px;
+	right: 25%;
+	margin-right: -110px;
+	bottom: 10px;
 	min-width: 300px;
 }
 
@@ -119,7 +119,7 @@
 }
 
 .bx-wrapper .bx-next {
-	right: -18px;
+	right: -55px;
 	background: url(../../img/ico.png) no-repeat -127px 0;
 }
 

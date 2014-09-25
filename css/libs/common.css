@@ -48,3 +48,6 @@ label.button_upload .button_upload-text {
 	background: #40aaf1;
 	box-shadow: 0 2px 0 #2684c3;
 }
+.bold {
+	font-weight: bold;
+}

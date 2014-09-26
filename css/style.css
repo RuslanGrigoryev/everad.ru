@@ -40,9 +40,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 @font-face {
 	font-family: 'SegoeUIRegular';
 	src: url('../fonts/segoeui.eot') format('embedded-opentype'),
- url('../fonts/segoeui.woff') format('woff'),
- url('../fonts/segoeui.ttf') format('truetype'),
- url('../fonts/segoeui.svg#SegoeUIRegular') format('svg');
+		 url('../fonts/segoeui.woff') format('woff'),
+		 url('../fonts/segoeui.ttf') format('truetype'),
+		 url('../fonts/segoeui.svg#SegoeUIRegular') format('svg');
 	src: url('../fonts/segoeui.eot');
 }
 @font-face {
@@ -76,6 +76,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
  url('../fonts/rouble.ttf') format('truetype'),
  url('../fonts/rouble.svg#rouble') format('svg');
 	src: url('../fonts/rouble.eot');
+	font-weight: normal;
+	    font-style: normal;
 }
 @font-face {
 	font-family: 'ProximaNovaBold';
@@ -87,7 +89,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 body {
 	background: #fff;
-	font-family: 'SegoeUIRegular',sans-serif;
+	font-family: 'SegoeUIRegular', sans-serif;
 	font-size: 16px;
 	height: 100%;
 }
@@ -530,7 +532,7 @@ b {
 }
 #section2 {
 	background: url(../img/sec2_bg.jpg)no-repeat center bottom fixed;
-	min-height: 383px;
+	min-height: 423px;
 	padding: 39px 0 0;
 }
 .bxslider {
@@ -542,7 +544,7 @@ b {
 	background: #fff;
 	border: 1px solid #dedede;
 	box-shadow: -4px 4px 0 rgba(0,0,0,.05);
-	height: 190px;
+	height: 226px;
 	margin: 5px auto;
 	padding: 15px 13px;
 	webkit-box-shadow: -4px 4px 0 rgba(0,0,0,.05);
@@ -554,7 +556,7 @@ b {
 }
 .offer_box img {
 	height: 65px;
-	margin: 0 auto 25px;
+	margin: 0 auto 5px;
 	width: 150px;
 }
 .offer_box .offer_txt {
@@ -570,14 +572,16 @@ b {
 	font-family: 'SegoeUIBold';
 	font-size: 16px;
 	text-align: right;
+	font-weight: bold;
 }
 .rouble {
-	color: #000;
-	float: right;
-	font-family: 'rouble';
+	background: url(../img/ruble.png) no-repeat;
 	font-size: 16px;
 	line-height: 18px;
+	float: right;
 	text-align: right;
+	width: 12px;
+	height: 18px;
 }
 .exclusive {
 }
@@ -3179,7 +3183,7 @@ b {
 		display: none;
 	}
 	.owl-carousel {
-		max-width: 500px;
+		max-width: 600px;
 	}
 }
 @media all and (max-width: 600px) {

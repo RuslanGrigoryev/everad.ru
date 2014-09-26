@@ -333,11 +333,11 @@ $(document).ready(function(){
     if ( $('.owl-slider').length) {
         $(".owl-slider").owlCarousel({
             items   : 4,
-            autoPlay: true,
+            /*autoPlay: true,*/
             stopOnHover: true,
             navigation: true,
             navigationText : false,
-            itemsDesktopSmall : [850,2],
+            itemsDesktopSmall : [850,3],
             itemsMobile     : [600,1]
         });
     }

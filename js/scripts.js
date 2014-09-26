@@ -191,7 +191,16 @@ function ParallaxScrolling () {
 }
 
 $(document).ready(function(){
+    var isMacLike = navigator.platform.match(/(Mac|iPhone|iPod|iPad)/i)?true:false;
+    if (isMacLike) {
+        $('#section5').css('background','url(./img/sec5_bg.jpg) no-repeat center bottom');
+        $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom');
+    }
+    else {
+        $('#section5').css('background','url(./img/sec5_bg.jpg) no-repeat center bottom fixed');
+        $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom fixed');
 
+    }
     if ($('#target').length) {
         $( "#target" ).selectmenu({width: 100});
     }
@@ -305,7 +314,17 @@ $(document).ready(function(){
         $sec3b.css('display','none');
         $sec4a.css('display','block');
         $sec4b.css('display','none');
-        $section5.css('background','url(./img/sec5_bg.jpg) no-repeat center bottom fixed');
+
+        if (isMacLike) {
+            $section5.css('background','url(./img/sec5_bg.jpg) no-repeat center bottom');
+        $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom');
+
+        }
+        else {
+            $section5.css('background','url(./img/sec5_bg.jpg) no-repeat center bottom fixed');
+        $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom fixed');
+
+        }
         $regButton.removeClass('active_button');
     });
 
@@ -324,7 +343,16 @@ $(document).ready(function(){
         $sec3b.css('display','none');
         $sec4a.css('display','block');
         $sec4b.css('display','none');
-        $section5.css('background','url(./img/sec5_bg.jpg) no-repeat center bottom fixed');
+        if (isMacLike) {
+            $section5.css('background','url(./img/sec5_bg.jpg) no-repeat center bottom');
+        $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom');
+
+        }
+        else {
+            $section5.css('background','url(./img/sec5_bg.jpg) no-repeat center bottom fixed');
+        $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom fixed');
+
+        }
         $regButton.removeClass('active_button');
     });
 
@@ -343,7 +371,16 @@ $(document).ready(function(){
         $sec3b.css('display','block');
         $sec4a.css('display','none');
         $sec4b.css('display','block');
-        $section5.css('background','url(./img/sec5b_bg.jpg) no-repeat center bottom fixed');
+        if (isMacLike) {
+            $section5.css('background','url(./img/sec5b_bg.jpg) no-repeat center bottom');
+        $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom');
+
+        }
+        else {
+            $section5.css('background','url(./img/sec5b_bg.jpg) no-repeat center bottom fixed');
+        $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom fixed');
+
+        }
         $regButton.addClass('active_button');
     });
 
@@ -362,7 +399,16 @@ $(document).ready(function(){
         $sec3b.css('display','block');
         $sec4a.css('display','none');
         $sec4b.css('display','block');
-        $section5.css('background','url(./img/sec5b_bg.jpg) no-repeat center bottom fixed');
+        if (isMacLike) {
+            $section5.css('background','url(./img/sec5b_bg.jpg) no-repeat center bottom');
+        $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom');
+
+        }
+        else {
+            $section5.css('background','url(./img/sec5b_bg.jpg) no-repeat center bottom fixed');
+        $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom fixed');
+
+        }
         $regButton.addClass('active_button');
     });
 

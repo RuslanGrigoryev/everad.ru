@@ -177,6 +177,19 @@ function toggleBlocks () {
         }) 
 }
 
+/*function ParallaxScrolling () {
+    $('section[data-type="background"]').each(function(){
+        var $bgobj = $(this); // создаем объект
+        $(window).on('scroll', _.throttle(function() { 
+            var yPos = -($window.scrollTop() / $bgobj.data('speed')); // вычисляем коэффициент 
+            // Присваиваем значение background-position
+            var coords = 'center '+ yPos + 'px';
+            // Создаем эффект Parallax Scrolling
+            $bgobj.css({ backgroundPosition: coords });
+        }, 100));
+    });
+}*/
+
 $(document).ready(function(){
 
     if ($('#target').length) {
@@ -190,16 +203,7 @@ $(document).ready(function(){
     toggleBlocks();
     $(window).resize(initPageHeader);
     
-    $('section[data-type="background"]').each(function(){
-        var $bgobj = $(this); // создаем объект
-        $(window).on('scroll', _.throttle(function() { 
-            var yPos = -($window.scrollTop() / $bgobj.data('speed')); // вычисляем коэффициент 
-            // Присваиваем значение background-position
-            var coords = 'center '+ yPos + 'px';
-            // Создаем эффект Parallax Scrolling
-            $bgobj.css({ backgroundPosition: coords });
-        }, 100));
-    });
+    /*ParallaxScrolling();*/
 
     var $container4 = $('#section4-b');
     if ($container4.length) {

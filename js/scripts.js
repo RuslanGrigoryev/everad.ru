@@ -177,7 +177,7 @@ function toggleBlocks () {
         }) 
 }
 
-/*function ParallaxScrolling () {
+function ParallaxScrolling () {
     $('section[data-type="background"]').each(function(){
         var $bgobj = $(this); // создаем объект
         $(window).on('scroll', _.throttle(function() { 
@@ -188,7 +188,7 @@ function toggleBlocks () {
             $bgobj.css({ backgroundPosition: coords });
         }, 100));
     });
-}*/
+}
 
 $(document).ready(function(){
 
@@ -203,7 +203,7 @@ $(document).ready(function(){
     toggleBlocks();
     $(window).resize(initPageHeader);
     
-    /*ParallaxScrolling();*/
+    ParallaxScrolling();
 
     var $container4 = $('#section4-b');
     if ($container4.length) {
@@ -309,7 +309,45 @@ $(document).ready(function(){
         $regButton.removeClass('active_button');
     });
 
+    $('.header').on('click','.button_main_master_2',function(){
+        $enterButton.removeClass('active_enter_button');
+        $bannerLeft.addClass('banner_active');
+        $bannerLeft.removeClass('banner_l_inactive');
+        $bannerRight.removeClass('banner_active');
+        $bannerRight.addClass('banner_r_inactive');
+        $signButton.removeClass('active_sign_button');
+        $sec1a.css('display','block');
+        $sec1b.css('display','none');
+        $sec2a.css('display','block');
+        $sec2b.css('display','none');
+        $sec3a.css('display','block');
+        $sec3b.css('display','none');
+        $sec4a.css('display','block');
+        $sec4b.css('display','none');
+        $section5.css('background','url(./img/sec5_bg.jpg) no-repeat center bottom fixed');
+        $regButton.removeClass('active_button');
+    });
+
     $adButton.on('click',function(){
+        $enterButton.addClass('active_enter_button');
+        $bannerLeft.removeClass('banner_active');
+        $bannerLeft.addClass('banner_l_inactive');
+        $bannerRight.addClass('banner_active');
+        $bannerRight.removeClass('banner_r_inactive');
+        $signButton.addClass('active_sign_button');
+        $sec1a.css('display','none');
+        $sec1b.css('display','block');
+        $sec2a.css('display','none');
+        $sec2b.css('display','block');
+        $sec3a.css('display','none');
+        $sec3b.css('display','block');
+        $sec4a.css('display','none');
+        $sec4b.css('display','block');
+        $section5.css('background','url(./img/sec5b_bg.jpg) no-repeat center bottom fixed');
+        $regButton.addClass('active_button');
+    });
+
+    $('.header').on('click','.button_main_adv_2',function(){
         $enterButton.addClass('active_enter_button');
         $bannerLeft.removeClass('banner_active');
         $bannerLeft.addClass('banner_l_inactive');

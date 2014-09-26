@@ -113,13 +113,13 @@
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
-.bx-wrapper .bx-prev {
-	left: 0;
+.owl-slider .owl-prev {
+	left: -20px;
 	background: url(../../img/ico.png) no-repeat -98px 0;
 }
 
-.bx-wrapper .bx-next {
-	right: -55px;
+.owl-slider .owl-next {
+	right: -20px;
 	background: url(../../img/ico.png) no-repeat -127px 0;
 }
 

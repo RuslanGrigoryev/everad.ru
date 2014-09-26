@@ -3178,6 +3178,9 @@ b {
 	.line-vert {
 		display: none;
 	}
+	.owl-carousel {
+		max-width: 500px;
+	}
 }
 @media all and (max-width: 600px) {
 	#form_popup.activePopup {
@@ -3203,7 +3206,10 @@ b {
 		margin: 0 5px 0 8px;
 	}
 	#form_popup .not_account p {
-	text-align: left;
+		text-align: left;
+	}
+	.owl-carousel {
+		max-width: 290px;
 	}
 }
 @media all and (max-width: 400px) {

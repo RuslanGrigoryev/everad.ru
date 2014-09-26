@@ -331,7 +331,15 @@ $(document).ready(function(){
     $('input.styled').checkbox(); 
     
     if ( $('.owl-slider').length) {
-        $(".owl-slider").owlCarousel();
+        $(".owl-slider").owlCarousel({
+            items   : 4,
+            autoPlay: true,
+            stopOnHover: true,
+            navigation: true,
+            navigationText : false,
+            itemsDesktopSmall : [850,2],
+            itemsMobile     : [600,1]
+        });
     }
     
 

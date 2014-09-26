@@ -228,7 +228,7 @@ $(document).ready(function(){
                     var topOfWindow = $(window).scrollTop();
                     if ((top < topOfWindow+350) && (topOfWindow<bottom)) {
                       if ($container4.is(':visible')) {
-                        $goodLayout.fadeIn(350).animate({'top':'188px'},300,function(){
+                        $goodLayout.fadeIn(350).animate({'top':'181px'},300,function(){
                             $check1.fadeIn(250).animate({'top':'154px'},150,function(){
                                 $check2.fadeIn(250).animate({'top':'154px'},150,function(){
                                     $check3.fadeIn(250).animate({'top':'154px'},150,function(){
@@ -326,7 +326,9 @@ $(document).ready(function(){
 
     $('input.styled').checkbox(); 
     
-    $(".owl-slider").owlCarousel();
+    if ( $('.owl-slider').length) {
+        $(".owl-slider").owlCarousel();
+    }
     
 
     $('.bxslider2').bxSlider({

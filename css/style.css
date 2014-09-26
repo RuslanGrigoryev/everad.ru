@@ -952,7 +952,7 @@ b {
 	background: #efefef;
 	color: #a4a4a4;
 	font-size: 14px;
-	left: 10px;
+	left: -10px;
 	line-height: 26px;
 	padding: 3px 14px;
 	position: absolute;
@@ -982,8 +982,10 @@ b {
 #section4-b .colums .good .good__layout {
 	display: none;
 	position: absolute;
-	right: 50px;
+	right: 0px;
 	top: 260px;
+	left: 43%;
+	text-align: center;
 }
 #section4-b .colums .good .good__check {
 	display: none;
@@ -997,7 +999,7 @@ b {
 	left: 95px;
 }
 #section4-b .colums .good .good__check.c3 {
-	left: 159px;
+	left: 160px;
 }
 #section4-b .colums .good .good__word {
 	font-family: 'SegoeUISemibold',sans-serif;
@@ -1006,6 +1008,18 @@ b {
 	position: absolute;
 	top: 31px;
 	z-index: 201;
+}
+.wrap-chart-image {
+	width: 263px;
+	height: 185px;
+	display: inline-block;
+	position: relative;
+}
+.wrap-browser-image {
+	position: relative;
+	width: 210px;
+	height: 189px;
+	margin: 0 auto;
 }
 #section4-b .colums .good .good__word.w1 {
 	color: #c4c4c4;
@@ -1023,7 +1037,7 @@ b {
 	background: #f76969;
 	color: white;
 	font-size: 14px;
-	right: -46px;
+	right: -52px;
 	margin: 0;
 	min-width: 50px;
 	padding: 18px 8px;
@@ -1133,8 +1147,17 @@ b {
 	left: 0;
 	bottom: 0;
 	z-index: 200;
-	text-align: center;
+	text-align: right;
 	right: 50%;
+}
+.line-vert	{
+	width: 2px;
+	background: #efefef;
+	top: 0;
+	bottom: 0;
+	right: 3px;
+	z-index: 300;
+	position: absolute;
 }
 .contacts_wrap {
 	margin: 0 auto;
@@ -2400,38 +2423,32 @@ b {
 }
 /*Soc_share list styles*/
 
- .soc_share {
-
-}
 .soc_share__item {
-
+	height: 24px;
+	width: 71px;
+	display: inline-block;
+	margin-right: 18px;
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:        border-box;
+	padding: 4px;
+	background: url(../img/sprite-social.png) no-repeat;
 }
-.soc_share__icon {
-
-}
-.soc_share__amount {
-
-}
-.soc_share__item__fb {
-
-}
-.soc_share__item__fb .soc_share__icon {
-
+.soc_share__item a {
+	text-decoration: none;
+	font-size: 12px;
+	float: right;
+	padding-top: 2px;
+	color: #fff;
 }
 .soc_share__item__tw {
-
-}
-.soc_share__item__tw .soc_share__icon {
-
+	background-position: -71px 0;
 }
 .soc_share__item__vk {
-
+	background-position: -143px 0;
 }
-.soc_share__item__vk .soc_share__icon {
-
-}
-.soc_share__item__gp .soc_share__icon {
-	
+.soc_share__item__gp {
+	background-position: -214px 0;
 }
 
 /*Vacancy page styles*/
@@ -2836,8 +2853,7 @@ b {
 		top: 50%;
 	}
 	#section4-b .colums .leads__baloon {
-		right: 40px;
-		top: 150px !important;
+		right: -29px;
 	}
 	.banner_box p {
 		display: none;
@@ -3015,6 +3031,9 @@ b {
 	}
 	.reg_box .ui-selectmenu-button.ui-state-default {
 		width: 100% !important;
+	}
+	.line-vert {
+		display: none;
 	}
 }
 @media all and (max-width: 600px) {
